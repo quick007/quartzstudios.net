@@ -8,7 +8,7 @@ The website for quartz studios.
 2. Download npm if you don't have it already (and maybe yarn?)
 3. Start up a dev server with `yarn dev`
 4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. Pages should update automagically after you change something.
-5. Open a pull and disscribe what you changed.
+5. Open a pull and describe what you changed.
 
 ### Things to note
 
