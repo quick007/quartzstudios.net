@@ -26,8 +26,12 @@ const Navbar = (props) => {
                 <meta property="twitter:description" content="Quartz Studios creates next-generation experiences in Minecraft. Experience something idk what to put here tbh. " />
                 <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png" />
             </Head>
-            <nav className="bg-gray-800 flex flex-grow shadow">
-                <img src="logos/main.png" className="h-14 w-auto m-4"></img>
+            <nav className="text-gray-100 bg-gray-900 body-font shadow max-width-xl">
+                <div className="h-16 w-16 flex items-center justify-center ml-4 space-x-4">
+                    <Link href="/">
+                        <img src="logos/main.png" className="h-10 hover:h-12 w-auto cursor-pointer"></img>
+                    </Link>
+                </div>
             </nav>
             
         </>
