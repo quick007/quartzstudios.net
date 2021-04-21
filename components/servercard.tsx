@@ -12,8 +12,18 @@ const ServerCard = (props) => {
                         <img className="absolute left-[10px] top-[10px] w-5/12 " src={props.logo} />
                     </li>
                     <li className="m-4">
-                        <div className={"rounded-full px-2 prose text-gray-200 font-semibold inline-flex bg-red-700"}>Offline</div>
+                        <h2 className="prose-2xl text-white font-semibold">{props.title}</h2>
+                        <p className="prose-lg mb-2 text-gray-200 mx-1">{props.desc}</p>
+                        <div className="relative">
+                            <div className={"rounded-full px-2 prose text-gray-200 font-semibold inline-flex bg-red-700"}>Offline</div>
+                            <div className="absolute right-0 inline-flex border border-gray-500 divide-x text-gray-200 ">
+                                <div className="p-1">{props.ip}</div>
+                                <div className="p-1">Copy IP</div>
+                            </div>
+
+                        </div>
                     </li>
+                    
                 </ul>
             </div>
         </>
