@@ -29,7 +29,7 @@ const Navbar = (props) => {
             <nav className="text-gray-100 bg-gray-900 body-font shadow max-width-xl">
                 <div className="h-16 w-16 flex items-center justify-center ml-4 space-x-4">
                     <Link href="/">
-                        <img src="logos/main.png" className="h-10 hover:h-12 w-auto cursor-pointer"></img>
+                        <img src="logos/main.png" className="h-10 hover:h-12 w-auto cursor-pointer"> </img>
                     </Link>
                 </div>
             </nav>
