@@ -5,7 +5,7 @@ import { ArrowRightIcon } from "@heroicons/react/outline";
 const ServerCard = (props) => {
     return (
         <>
-            <div className="flex bg-gray-900 shadow-lg w-full lg:w-96 mt-5 lg:mt-0 border-b-2 border-red-600 ">
+            <div className="flex bg-gray-900 shadow-lg w-full lg:w-96 mt-5 lg:mt-0 border-b-2 border-red-600 lg:mr-4">
                 <ul>
                     {/*Image*/}
                     <li className="relative lg:w-96">
