@@ -1,4 +1,3 @@
-
 module.exports = {
   mode: "jit",
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
@@ -8,9 +7,9 @@ module.exports = {
       colors: {
         gray: {
           600: "#48444c",
-          700: "#383c3c",
+          700: "#263137",
           800: "#202424",
-          900: "#151b1e",
+          900: "#111618",
         },
       },
     },
