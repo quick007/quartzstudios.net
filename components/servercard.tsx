@@ -1,8 +1,12 @@
-import React from "react";
+import React, { Props } from "react";
 import Link from "next/link";
 import { ArrowRightIcon } from "@heroicons/react/outline";
 
+
+
 const ServerCard = (props) => {
+    const online = false
+    const playercount = "0"
     return (
         <>
             <div className="flex bg-gray-900 shadow-lg w-full lg:w-96 border-b-2 border-red-600">
@@ -11,7 +15,7 @@ const ServerCard = (props) => {
                     <li className="relative lg:w-96">
                         <img src={props.img} className=""/>
                         <div className="absolute inset-0 bottom-[-1px] bg-gradient-to-b from-[rgba(0,0,0,1)] via-[rgba(0,0,0,0)] to-gray-900" />
-                        <img className="absolute left-[10px] top-[10px] w-5/12 " src={props.logo} />
+                        <img className="absolute left-[10px] top-[10px] w-5/12 sm:w-3/12 lg:w-5/12 " src={props.logo} />
                     </li>
                     {/*Card Content*/}
                     <li className="m-3">
@@ -28,16 +32,18 @@ const ServerCard = (props) => {
                         </Link>
                         <div className="relative">
                             {/*Player counter/offline*/}
-                            <div className={"rounded-full select-none px-2 prose text-gray-200 font-semibold inline-flex cursor-not-allowed bg-red-700"}>Offline</div>
+                            <div className={"rounded-full select-none px-2 prose text-gray-200 font-semibold inline-flex cursor-not-allowed " + (online ? "bg-green-600" : "bg-red-700")}>
+                                {online ? <span>{playercount} Online</span> : <span>Offline</span>}
+                            </div>
                             {/*Click to copy*/}
                             <button 
                                 onClick={() => navigator.clipboard.writeText(props.ip)} 
                                 className="group absolute right-0 inline-flex text-gray-200 rounded-full px-2 bg-gray-800 hover:bg-gray-700 focus:bg-green-600 cursor-pointer font-roboto focus:outline-none"
                             >
-                                <div className="relative items-center justify-center select-none">
+                                <div className="relative select-none">
                                     <span className="group-hover:invisible group-focus:invisible">{props.ip}</span>
-                                    <span className="text-center hidden group-hover:block group-focus:hidden absolute top-0 ">Click to copy</span>
-                                    <span className="hidden group-focus:block absolute top-0 ">Copied!</span>
+                                    <span className="text-center hidden group-hover:block group-focus:hidden absolute top-0 text-center">Click to copy</span>
+                                    <span className="hidden group-focus:block absolute top-0 text-center">Copied!</span>
                                 </div>
                             </button>
 

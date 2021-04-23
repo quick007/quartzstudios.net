@@ -7,7 +7,7 @@ import Carousel from 'react-elastic-carousel';
 export default function Home() {
   return (
     <>
-        <Navbar title="Creating Next-Generation Minecraft Experiences" />
+        <Navbar title="Next-Generation Minecraft Experiences" />
           <div className="bg-gray-700 flex-grow overflow-y-auto max-width-2xl">
             <div className="relative">
               <img src="main/demo3.png" className="w-full h-[calc(100vh-200px)]" />
@@ -23,8 +23,8 @@ export default function Home() {
           </Carousel>*/}
               <div className="flex items-center justify-center">
                 <div className="absolute top-[15vh] flex flex-col items-center justify-center">
-                  <img src="/logos/dh.png" className="w-96 pb-5" />
-                  <div className="rounded-full select-none px-2 prose text-gray-200 font-semibold inline-flex bg-green-500 mb-2">110 Players Online</div>
+                  <img src="/logos/dh.png" className="w-96 pb-5 px-2" />
+                  <div className="rounded-full select-none px-2 prose text-gray-200 font-semibold inline-flex bg-green-600 mb-2">110 Players Online</div>
                   <button 
                     onClick={() => navigator.clipboard.writeText("dev.baezor.com")} 
                     className="group inline-flex text-gray-200 rounded-full px-2 bg-gray-800 hover:bg-gray-700 focus:bg-green-600 cursor-pointer font-roboto focus:outline-none"
@@ -36,17 +36,40 @@ export default function Home() {
                     </div>
                   </button>
                 </div>
-                <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10 absolute top-[calc(100vh-250px)]"> {/*lg:absolute lg:bottom-[-600px]*/}
-                  <ServerCard name="Dawn Horizons" desc="poggersrow" img="/main/demo1.png" logo="logos/dh.png" ip="dev.baezor.com" />
-                  <ServerCard name="ByteClub" desc=":amoooooooooooongus: When the imposter is suusssy" img="/main/demo2.png" logo="" ip="byteclub.minehut.gg" />
-                  <ServerCard name="Dawn Horizons" desc="poggersrow" img="/main/demo1.png" logo="logos/dh.png" ip="dev.baezor.com" />
-                  <ServerCard name="Dawn Horizons" desc="poggersrow" img="/main/demo1.png" logo="logos/dh.png" ip="dev.baezor.com" />
-                  <ServerCard name="Dawn Horizons" desc="poggersrow" img="/main/demo1.png" logo="logos/dh.png" ip="dev.baezor.com" />
-                  <ServerCard name="Dawn Horizons" desc="poggersrow" img="/main/demo1.png" logo="logos/dh.png" ip="dev.baezor.com" />
-                  <ServerCard name="Dawn Horizons" desc="poggersrow" img="/main/demo1.png" logo="logos/dh.png" ip="dev.baezor.com" />
-                  <ServerCard name="Dawn Horizons" desc="poggersrow" img="/main/demo1.png" logo="logos/dh.png" ip="dev.baezor.com" />
-                </div>
               </div>
+                
+                <div className="flex justify-center mx-5 ">
+                  <ul className="space-y-5">
+                    <li>
+                      {/*Servercards*/}
+                      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10">
+                        <ServerCard name="Dawn Horizons" desc="poggersrow" img="/main/demo1.png" logo="logos/dh.png" ip="dev.baezor.com" />
+                        <ServerCard name="ByteClub" desc=":amoooooooooooongus: When the imposter is suusssy" img="/main/demo2.png" logo="" ip="byteclub.minehut.gg" />
+                        <ServerCard name="Dawn Horizons" desc="poggersrow" img="/main/demo1.png" logo="logos/dh.png" ip="dev.baezor.com" />
+                        <ServerCard name="Dawn Horizons" desc="poggersrow" img="/main/demo1.png" logo="logos/dh.png" ip="dev.baezor.com" />
+                        <ServerCard name="Dawn Horizons" desc="poggersrow" img="/main/demo1.png" logo="logos/dh.png" ip="dev.baezor.com" />
+                        <ServerCard name="Dawn Horizons" desc="poggersrow" img="/main/demo1.png" logo="logos/dh.png" ip="dev.baezor.com" />
+                        <ServerCard name="Dawn Horizons" desc="poggersrow" img="/main/demo1.png" logo="logos/dh.png" ip="dev.baezor.com" />
+                        <ServerCard name="Dawn Horizons" desc="poggersrow" img="/main/demo1.png" logo="logos/dh.png" ip="dev.baezor.com" />
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        {/*Staff List*/}
+                        <div >
+                          <ul className="flex flex-col bg-gray-900 py-4">
+                            <li className="flex justify-center">
+                              <h2 className=" tracking-wider text-3xl font-semibold uppercase text-gray-200">Development Team</h2>
+                            </li>
+                            <li className="flex justify-center">
+                              <h4 className="prose-lg text-gray-200">The people that made this all possible</h4>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
             </div>
           {/*footer here*/}
         </div>
