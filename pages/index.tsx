@@ -41,7 +41,7 @@ export default function Home() {
                 
                 <div className="flex justify-center mx-5 mb-4">
                   <ul className="space-y-5">
-                    <li>
+                    <li className="flex justify-center">
                       {/*Servercards*/}
                       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10">
                         <ServerCard name="Dawn Horizons" desc="poggersrow" img="/main/demo1.png" logo="logos/dh.png" ip="dev.baezor.com" />
@@ -66,16 +66,12 @@ export default function Home() {
                               <h4 className="prose-lg text-gray-200">The people that made this all possible</h4>
                             </li>
                             <li className="mx-4 flex justify-center">
-                              <div className="grid grid-cols-5 gap-8">
-                                <StaffCard ign="Levah" roleName="Web Designer" roleColor="#eda81f" />
-                                <StaffCard ign="quick_007" roleName="Web Designer" roleColor="#eda81f" />
-                                <StaffCard ign="quick_007" roleName="Web Designer" roleColor="#eda81f" />
-                                <StaffCard ign="quick_007" roleName="Web Designer" roleColor="#eda81f" />
-                                <StaffCard ign="quick_007" roleName="Web Designer" roleColor="#eda81f" />
-                                <StaffCard ign="quick_007" roleName="Web Designer" roleColor="#eda81f" />
-                                <StaffCard ign="quick_007" roleName="Web Designer" roleColor="#eda81f" />
-                                <StaffCard ign="quick_007" roleName="Web Designer" roleColor="#eda81f" />
-                                <StaffCard ign="quick_007" roleName="Web Designer" roleColor="#eda81f" />
+                              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+                                <StaffCard ign="Levah" uuid="e3d2c72ac20047979f4dec3f0f0f42c3" roleName="Director" roleColor="#ff5151" />
+                                <StaffCard ign="Blight_Phoenixx" uuid="c5a7eb3577024bedb8e98bf713fe9ed6" roleName="Director" roleColor="#ff5151" />
+                                <StaffCard ign="quick_007" uuid="b597aac0011f41d0bab1edc1b809016e" roleName="Admin" roleColor="#85cf86" />
+                                <StaffCard ign="quick_007" uuid="b597aac0011f41d0bab1edc1b809016e" roleName="Admin" roleColor="#85cf86" />
+                                <StaffCard ign="quick_007" uuid="b597aac0011f41d0bab1edc1b809016e" roleName="Web Dev" roleColor="#eda81f" />
                               </div>
                             </li>
                           </ul>
