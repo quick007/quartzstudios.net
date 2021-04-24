@@ -1,6 +1,7 @@
 
 import Navbar from "../components/navbar";
 import ServerCard from "../components/servercard";
+import StaffCard from "../components/staffcard";
 import Carousel from 'react-elastic-carousel';
 
 
@@ -38,7 +39,7 @@ export default function Home() {
                 </div>
               </div>
                 
-                <div className="flex justify-center mx-5 ">
+                <div className="flex justify-center mx-5 mb-4">
                   <ul className="space-y-5">
                     <li>
                       {/*Servercards*/}
@@ -61,8 +62,21 @@ export default function Home() {
                             <li className="flex justify-center">
                               <h2 className=" tracking-wider text-3xl font-semibold uppercase text-gray-200">Development Team</h2>
                             </li>
-                            <li className="flex justify-center">
+                            <li className="flex justify-center mb-8">
                               <h4 className="prose-lg text-gray-200">The people that made this all possible</h4>
+                            </li>
+                            <li className="mx-4 flex justify-center">
+                              <div className="grid grid-cols-5 gap-8">
+                                <StaffCard ign="Levah" roleName="Web Designer" roleColor="#eda81f" />
+                                <StaffCard ign="quick_007" roleName="Web Designer" roleColor="#eda81f" />
+                                <StaffCard ign="quick_007" roleName="Web Designer" roleColor="#eda81f" />
+                                <StaffCard ign="quick_007" roleName="Web Designer" roleColor="#eda81f" />
+                                <StaffCard ign="quick_007" roleName="Web Designer" roleColor="#eda81f" />
+                                <StaffCard ign="quick_007" roleName="Web Designer" roleColor="#eda81f" />
+                                <StaffCard ign="quick_007" roleName="Web Designer" roleColor="#eda81f" />
+                                <StaffCard ign="quick_007" roleName="Web Designer" roleColor="#eda81f" />
+                                <StaffCard ign="quick_007" roleName="Web Designer" roleColor="#eda81f" />
+                              </div>
                             </li>
                           </ul>
                         </div>

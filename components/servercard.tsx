@@ -1,4 +1,4 @@
-import React, { Props } from "react";
+import React from "react";
 import Link from "next/link";
 import { ArrowRightIcon } from "@heroicons/react/outline";
 
