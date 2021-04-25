@@ -56,9 +56,7 @@ export default function Home() {
                       </div>
                     </li>
                     <li>
-                      <div>
                         {/*Staff List*/}
-                        <div >
                           <ul className="flex flex-col bg-gray-900 py-4">
                             <li className="flex justify-center">
                               <h2 className=" tracking-wider text-3xl font-semibold uppercase text-gray-200">Development Team</h2>
@@ -86,8 +84,19 @@ export default function Home() {
                               </div>
                             </li>
                           </ul>
-                        </div>
-                      </div>
+                    </li>
+                    <li>
+                      {/*Join our discord*/}
+                      <ul className="flex flex-col bg-gray-900 py-4">
+                        <li className="flex justify-center">
+                          <div>
+                            <h2 className=" tracking-wider text-3xl font-semibold uppercase text-gray-200">Lets be social!</h2>
+                          </div>
+                          <div>
+                            t
+                          </div>
+                        </li>
+                      </ul>
                     </li>
                   </ul>
                 </div>

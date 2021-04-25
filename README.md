@@ -16,9 +16,3 @@ The website for quartz studios.
 - For people not familiar with react, you need to use `className=` in place of `class=`.
 - Use `<Link>` (import it with `import Link from "next/link"`).
 - We also have heroicons so use that instead of importing actual SVG's. View the docs [here](https://github.com/tailwindlabs/heroicons/blob/master/README.md#react).
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

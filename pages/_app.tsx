@@ -3,9 +3,11 @@ import 'tailwindcss/tailwind.css';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div className="flex flex-col h-screen">
-      <Component {...pageProps} />
-    </div>
+    <>
+      <div className="flex flex-col h-screen">
+        <Component {...pageProps} />
+      </div>
+    </>
   )
 }
 
