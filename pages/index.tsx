@@ -2,7 +2,6 @@
 import Navbar from "../components/navbar";
 import ServerCard from "../components/servercard";
 import StaffCard from "../components/staffcard";
-import Carousel from 'react-elastic-carousel';
 
 
 export default function Home() {
