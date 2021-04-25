@@ -11,7 +11,9 @@ export default function Home() {
         <Navbar title="Next-Generation Minecraft Experiences" />
           <div className="bg-gray-700 flex-grow overflow-y-auto max-width-2xl">
             <div className="relative">
-              <img src="main/demo3.png" className="w-full h-[calc(100vh-200px)]" />
+              <div className="flex justify-center">
+                <img src="main/demo3.png" className="w-full h-[calc(100vh-200px)] min-w-[1280px] max-w-[1928px]" />
+              </div>
               <div className="absolute inset-0 bg-gradient-to-b from-[rgba(0,0,0,0)] via-[rgba(0,0,0,0)] to-gray-700 h-[calc(100vh-200px)]" />
             
           {/*<Carousel itemsToShow={1} showArrows={false} enableAutoPlay={true} autoPlaySpeed={5000} isRTL={true}>
