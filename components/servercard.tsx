@@ -13,9 +13,9 @@ const ServerCard = (props) => {
                 <ul>
                     {/*Image*/}
                     <li className="relative lg:w-96">
-                        <img src={props.img} className=""/>
+                        <img src={props.img} className="w-full lg:w-96" alt={props.name + "'s image from server"} />
                         <div className="absolute inset-0 bottom-[-1px] bg-gradient-to-b from-[rgba(0,0,0,1)] via-[rgba(0,0,0,0)] to-gray-900" />
-                        <img className="absolute left-[10px] top-[10px] w-5/12 sm:w-3/12 lg:w-5/12 " src={props.logo} />
+                        <img className="absolute left-[10px] top-[10px] w-5/12 sm:w-3/12 lg:w-5/12 " src={props.logo} alt={props.name + "'s logo"} />
                     </li>
                     {/*Card Content*/}
                     <li className="m-3">
@@ -25,10 +25,10 @@ const ServerCard = (props) => {
                             <span className="block lg:hidden">{truncate(props.desc,30)}</span>
                         </p>
                         <Link href={"/" + props.name}>
-                            <h5 className="group rounded-full select-none px-2 prose text-gray-200 opacity-60 hover:opacity-90 font-semibold inline-flex hover:bg-gray-700 cursor-pointer mb-5">
+                            <h3 className="group rounded-full select-none px-2 prose text-gray-200 opacity-60 hover:opacity-90 font-semibold inline-flex hover:bg-gray-700 cursor-pointer mb-5">
                                 Read More 
                                 <ArrowRightIcon className="ml-2 group-hover:ml-3 h-7 w-5" />
-                            </h5>
+                            </h3>
                         </Link>
                         <div className="relative">
                             {/*Player counter/offline*/}

@@ -2,16 +2,17 @@
 import Navbar from "../components/navbar";
 import ServerCard from "../components/servercard";
 import StaffCard from "../components/staffcard";
+import Image from "next/image";
 
 
 export default function Home() {
   return (
     <>
         <Navbar title="Next-Generation Minecraft Experiences" />
-          <div className="bg-gray-700 flex-grow overflow-y-auto max-width-2xl">
+          <div className="bg-gray-700 flex-grow overflow-y-auto overflow-x-hidden max-width-2xl">
             <div className="relative">
               <div className="flex justify-center">
-                <img src="main/demo3.png" className="w-full h-[calc(100vh-200px)] min-w-[1280px] max-w-[1928px]" />
+                <img src="main/demo3.png" className="w-full h-[calc(100vh-200px)] min-w-[1280px] max-w-[1928px]" alt="Background main page img" />
               </div>
               <div className="absolute inset-0 bg-gradient-to-b from-[rgba(0,0,0,0)] via-[rgba(0,0,0,0)] to-gray-700 h-[calc(100vh-200px)]" />
             
@@ -25,7 +26,7 @@ export default function Home() {
           </Carousel>*/}
               <div className="flex items-center justify-center">
                 <div className="absolute top-[15vh] flex flex-col items-center justify-center">
-                  <img src="/logos/dh.png" className="w-96 pb-5 px-2" />
+                  <img src="/logos/dh.png" className="w-96 pb-5 px-2" alt="Featured server logo" />
                   <div className="rounded-full select-none px-2 prose text-gray-200 font-semibold inline-flex bg-green-600 mb-2">110 Players Online</div>
                   <button 
                     onClick={() => navigator.clipboard.writeText("dev.baezor.com")} 
@@ -62,7 +63,7 @@ export default function Home() {
                               <h2 className=" tracking-wider text-3xl font-semibold uppercase text-gray-200">Development Team</h2>
                             </li>
                             <li className="flex justify-center mb-8">
-                              <h4 className="prose-lg text-gray-200">The people that made this all possible</h4>
+                              <h3 className="prose-lg text-gray-200">The people that made this all possible</h3>
                             </li>
                             <li className="mx-4 flex justify-center">
                               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
@@ -90,10 +91,10 @@ export default function Home() {
                       <ul className="flex flex-col bg-gray-900 py-4">
                         <li className="flex justify-center">
                           <div>
-                            <h2 className=" tracking-wider text-3xl font-semibold uppercase text-gray-200">Lets be social!</h2>
+                            
                           </div>
                           <div>
-                            t
+                            <h2 className=" tracking-wider text-3xl font-semibold uppercase text-gray-200">Lets be social!</h2>
                           </div>
                         </li>
                       </ul>
