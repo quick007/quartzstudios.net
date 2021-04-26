@@ -24,6 +24,9 @@ module.exports = {
           600: "#0a9160",
         },
       },
+      screens: {
+        "xs" : "362px",
+      },
     },
   },
   variants: {

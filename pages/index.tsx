@@ -1,4 +1,4 @@
-
+import Link from "next/link";
 import Navbar from "../components/navbar";
 import ServerCard from "../components/servercard";
 import StaffCard from "../components/staffcard";
@@ -9,7 +9,7 @@ export default function Home() {
     <>
         <Navbar title="Next-Generation Minecraft Experiences" />
           {/*Header image and stuffz*/}
-          <div className="bg-gray-700 flex-grow overflow-y-auto overflow-x-hidden max-width-2xl">
+          <div className="bg-gray-700 flex-grow overflow-y-auto overflow-x-hidden max-width-xl">
             <div className="relative">
               <div className="flex justify-center">
                 <img src="main/demo3.jpg" className="w-full h-[calc(100vh-200px)] min-w-[1280px] max-w-[1928px]" alt="Background main page img" />
@@ -74,11 +74,15 @@ export default function Home() {
                     <li>
                       {/*Join our discord*/}
                       <ul className="flex flex-col bg-gray-900 py-4">
-                        <li className="flex justify-center">
-                          <div>
-                            <h2 className=" tracking-wider text-3xl font-semibold uppercase text-gray-200">Lets be social!</h2>
+                        <li className="flex flex-col xs:flex-row justify-center items-center">
+                          <img src="logos/discord.jpg" alt="" className="w-16 xs:w-64 md:w-96" />
+                          <div className="md:ml-10 mr-2 pt-4">
+                            <h2 className="tracking-wider text-xl xs:text-3xl font-semibold uppercase text-gray-200">Let's be social!</h2>
+                            <p className="hidden xs:block sm:w-64 md:w-96 text-gray-200 font-roboto my-6 pl-2">Here at Quartz Studios we think communication is the key to an amazing community. Due to that, we highly value our Discord community and the way it allows us to connect our server community together! Wether you want to simply chat with people or get support, our discord is the place.</p>
+                            <Link href="https://discord.gg/ZfPwQ9AhbW">
+                              <button className="w-full xs:w-auto text-white text-lg font-semibold bg-[#7289DA] hover:bg-[#5e75c4] border-b-4 border-blue-500 hover:border-blue-600 px-4 py-2">Join our discord!</button>
+                            </Link>
                           </div>
-                          <img src="" alt="" />
                         </li>
                       </ul>
                     </li>
