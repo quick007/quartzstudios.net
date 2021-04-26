@@ -2,7 +2,6 @@
 import Navbar from "../components/navbar";
 import ServerCard from "../components/servercard";
 import StaffCard from "../components/staffcard";
-import Image from "next/image";
 
 
 export default function Home() {
@@ -38,14 +37,8 @@ export default function Home() {
                     <li className="flex justify-center">
                       {/*Servercards*/}
                       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10">
-                        <ServerCard name="Dawn Horizons" desc="poggersrow" img="/main/demo1.png" logo="logos/dh.png" ip="dev.baezor.com" />
-                        <ServerCard name="ByteClub" desc=":amoooooooooooongus: When the imposter is suusssy" img="/main/demo2.png" logo="" ip="byteclub.minehut.gg" />
-                        <ServerCard name="Dawn Horizons" desc="poggersrow" img="/main/demo1.png" logo="logos/dh.png" ip="dev.baezor.com" />
-                        <ServerCard name="Dawn Horizons" desc="poggersrow" img="/main/demo1.png" logo="logos/dh.png" ip="dev.baezor.com" />
-                        <ServerCard name="Dawn Horizons" desc="poggersrow" img="/main/demo1.png" logo="logos/dh.png" ip="dev.baezor.com" />
-                        <ServerCard name="Dawn Horizons" desc="poggersrow" img="/main/demo1.png" logo="logos/dh.png" ip="dev.baezor.com" />
-                        <ServerCard name="Dawn Horizons" desc="poggersrow" img="/main/demo1.png" logo="logos/dh.png" ip="dev.baezor.com" />
-                        <ServerCard name="Dawn Horizons" desc="poggersrow" img="/main/demo1.png" logo="logos/dh.png" ip="dev.baezor.com" />
+                        <ServerCard name="Dawn Horizons" desc="poggersrow" img="/main/demo4.png" logo="logos/dh.png" ip="dev.baezor.com" open={false} />
+                        <ServerCard name="Bytegames" desc="poggersrow" img="/main/demo5.png" logo="logos/dh.png" ip="dev.baezor.com" open={true} />
                       </div>
                     </li>
                     <li>
