@@ -8,9 +8,10 @@ import StaffCard from "../components/staffcard";
 export default function Home() {
   return (
     <>
-        <Navbar title="Next-Generation Minecraft Experiences" />
-          {/*Header image and stuffz*/}
-          <div className="bg-gray-700 flex-grow overflow-y-auto overflow-x-hidden">
+        
+        {/*Header image and stuffz*/}
+        <div className="flex-grow overflow-x-hidden">
+          <Navbar title="Next-Generation Minecraft Experiences" />
             <div className="relative">
               <div className="flex justify-center">
                 <img src="main/demo3.jpg" className="w-full min-w-[1280px] h-[calc(100vh-200px)] " alt="Background main page img" />

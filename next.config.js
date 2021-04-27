@@ -10,4 +10,13 @@ module.exports = withMDX({
     images: {
       domains: ['https://crafatar.com/avatars/'],
     },
+    async redirects() {
+      return [
+        {
+          source: '/store',
+          destination: 'https://store.quartzstudios.net',
+          permanent: true,
+        },
+      ]
+    },
   })

@@ -28,11 +28,21 @@ const Navbar = (props) => {
                 <meta property="twitter:description" content="Quartz Studios creates next-generation experiences in Minecraft. Experience something idk what to put here tbh. " />
                 <meta property="twitter:image" content="https://quartzstudios-net.vercel.app/logos/embead.jpg" />
             </Head>
-            <nav className="text-gray-100 bg-gray-800 shadow-lg">
-                <div className="h-16 w-16 flex items-center justify-center ml-4 space-x-4">
-                    <Link href="/">
-                        <img src="logos/main.jpg" className="h-10 hover:h-12 w-auto cursor-pointer" alt="Back to home logo" />
-                    </Link>
+            <nav className="w-full text-gray-100 bg-gray-800 shadow-lg sticky top-0 z-40">
+                <div className="mx-auto max-w-xl md:max-w-4xl xl:max-w-[78rem] flex">
+                    <div className="h-16 w-16 flex items-center justify-center">
+                        <Link href="/">
+                            <img src="/logos/main.jpg" className="h-10 hover:h-12 w-auto cursor-pointer" alt="Back to home logo" />
+                        </Link>
+                    </div>
+                    <div className="flex flex-grow flex-row-reverse items-center mr-2">
+                        <a href="/store" className="bg-blue-600 hover:opacity-70 px-4 py-1 rounded-sm ml-3">
+                            Store
+                        </a>
+                        <a href="/rules" className="bg-gray-600 hover:opacity-70 px-4 py-1 rounded-sm ml-3">
+                            Rules
+                        </a>
+                    </div>
                 </div>
             </nav>
             

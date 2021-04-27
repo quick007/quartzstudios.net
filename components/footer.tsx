@@ -8,7 +8,7 @@ const Footer = (props) => {
         <>
             {/*Thicc divice footer*/}
             <div className="w-full bg-gray-800 bottom-0 hidden md:block">
-                <div className="grid grid-cols-7 max-w-[75rem] mx-auto py-6 space-x-4">
+                <div className="grid grid-cols-7 max-w-xl md:max-w-4xl xl:max-w-[78rem] mx-auto py-6 space-x-4 md:ml-5 lg:ml-auto">
                     <div className="left-0 col-span-4">
                         <h2 className="tracking-wider text-3xl  font-semibold uppercase text-gray-200">Quartz Studios</h2>
                         <p className="prose-xl text-gray-200">Creating next-generation Minecraft experiences</p>
@@ -42,11 +42,11 @@ const Footer = (props) => {
                     <h2 className="tracking-wider text-xl xs:text-3xl font-semibold uppercase text-gray-200">Quartz Studios</h2>
                     <p className="prose-xl text-gray-200 text-center hidden xs:block">Creating next-generation Minecraft experiences</p>
                     <hr className="ml-2 mt-1 w-16 border-2 border-blue-600 mb-4" />
-                    <div className="flex text-gray-700 space-x-2">
-                        <a href="https://discord.gg/ZfPwQ9AhbW" className="rounded-full bg-gray-900 p-2">
+                    <div className="flex text-gray-500 space-x-2"> {/*modify text color to change svg colors*/}
+                        <a href="https://discord.gg/ZfPwQ9AhbW" className="rounded-full bg-gray-900 bg-opacity-50 p-2">
                             {discordsvg()}
                         </a>
-                        <a href="https://store.quartzstudios.net/" className="rounded-full bg-gray-900 p-2">
+                        <a href="https://store.quartzstudios.net/" className="rounded-full bg-gray-900 bg-opacity-50 p-2">
                             <ShoppingCartIcon className="w-6 h-auto" />
                         </a>
                     </div>
