@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 import ServerCard from "../components/servercard";
 import StaffCard from "../components/staffcard";
 
@@ -9,10 +10,10 @@ export default function Home() {
     <>
         <Navbar title="Next-Generation Minecraft Experiences" />
           {/*Header image and stuffz*/}
-          <div className="bg-gray-700 flex-grow overflow-y-auto overflow-x-hidden max-width-xl">
+          <div className="bg-gray-700 flex-grow overflow-y-auto overflow-x-hidden">
             <div className="relative">
               <div className="flex justify-center">
-                <img src="main/demo3.jpg" className="w-full h-[calc(100vh-200px)] min-w-[1280px] max-w-[1928px]" alt="Background main page img" />
+                <img src="main/demo3.jpg" className="w-full min-w-[1280px] h-[calc(100vh-200px)] " alt="Background main page img" />
               </div>
               <div className="absolute inset-0 bg-gradient-to-b from-[rgba(0,0,0,0)] via-[rgba(0,0,0,0)] to-gray-700 h-[calc(100vh-200px)]" />
               <div className="flex items-center justify-center">
@@ -37,8 +38,8 @@ export default function Home() {
                     <li className="flex justify-center">
                       {/*Servercards*/}
                       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10">
-                        <ServerCard name="Dawn Horizons" desc="poggersrow" img="/main/demo4.jpg" logo="logos/dh.jpg" ip="dev.baezor.com" open={false} />
-                        <ServerCard name="Bytegames" desc="poggersrow" img="/main/demo5.jpg" logo="logos/dh.jpg" ip="dev.baezor.com" open={true} />
+                        <ServerCard name="Dawn Horizons" desc="Experience an enhanced Survival experience, explore distant lands and create what you want on your own personal island." img="/main/demo4.jpg" logo="logos/dh.jpg" ip="" open={false} />
+                        <ServerCard name="Bytegames" desc="Enjoy a library of unique and custom Minigames made by Quartz Studios." img="/main/demo5.jpg" logo="logos/main.jpg" ip="" open={false} />
                       </div>
                     </li>
                     <li>
@@ -59,7 +60,7 @@ export default function Home() {
                                 <StaffCard ign="Baezor" uuid="93eb06cd0a1e4d04affe81a59b632815" roleName="Admin" roleColor="bg-[#43ae30]" />
                                 <StaffCard ign="B1llyMarsh" uuid="4f28d53ccdf241b985f2cf40439f449c" roleName="Admin" roleColor="bg-[#43ae30]" />
                                 <StaffCard ign="quick_007" uuid="b597aac0011f41d0bab1edc1b809016e" roleName="Web Dev" roleColor="bg-[#cc8b0a]" />
-                                <StaffCard ign="drizcraft" uuid="a9c3d17765394130bb09131c792c3420" roleName="Events/Team" roleColor="bg-[#b5186c]" />
+                                <StaffCard ign="drizcraft" uuid="a9c3d17765394130bb09131c792c3420" roleName="Events / Team" roleColor="bg-[#b5186c]" />
                                 <StaffCard ign="dinomite" uuid="569f5d0903ad4b29ae2039d833bff3a5" roleName="Team" roleColor="bg-[#407cea]" />
                                 <StaffCard ign="TrueFusion" uuid="82ce07bce885485e9596f45ecac16681" roleName="Team" roleColor="bg-[#407cea]" />
                                 <StaffCard ign="pesekjan" uuid="d9b0d8f17bff48c7b34a673db8a6c072" roleName="Team" roleColor="bg-[#407cea]" />
@@ -74,13 +75,13 @@ export default function Home() {
                     <li>
                       {/*Join our discord*/}
                       <ul className="flex flex-col bg-gray-900 py-4">
-                        <li className="flex flex-col xs:flex-row justify-center items-center">
-                          <img src="logos/discord.jpg" alt="" className="w-16 xs:w-64 md:w-96" />
-                          <div className="md:ml-10 mr-2 pt-4">
-                            <h2 className="tracking-wider text-xl xs:text-3xl font-semibold uppercase text-gray-200">Let's be social!</h2>
-                            <p className="hidden xs:block sm:w-64 md:w-96 text-gray-200 font-roboto my-6 pl-2">Here at Quartz Studios we think communication is the key to an amazing community. Due to that, we highly value our Discord community and the way it allows us to connect our server community together! Wether you want to simply chat with people or get support, our discord is the place.</p>
+                        <li className="flex flex-col sm:flex-row justify-center items-center">
+                          <img src="logos/discord.jpg" alt="Wumpus from discord" className="w-16 xs:w-64 md:w-96" />
+                          <div className="md:ml-10 ml-2 sm:ml-0 mr-2 pt-4">
+                            <h2 className="tracking-wider text-xl xs:text-3xl mb-4 xs:mb-0 font-semibold uppercase text-gray-200 text-center sm:text-left">Let's be social!</h2>
+                            <p className="hidden xs:block sm:w-64 md:w-96 text-gray-200 font-roboto my-6 pl-2 text-center sm:text-left">Here at Quartz Studios we think communication is the key to an amazing community. Due to that, we highly value our Discord community and the way it allows us to connect our server community together! Wether you want to simply chat with people or get support, our discord is the place.</p>
                             <Link href="https://discord.gg/ZfPwQ9AhbW">
-                              <button className="w-full xs:w-auto text-white text-lg font-semibold bg-[#7289DA] hover:bg-[#5e75c4] border-b-4 border-blue-500 hover:border-blue-600 px-4 py-2">Join our discord!</button>
+                              <button className="w-full sm:w-auto  text-white text-lg font-semibold shadow bg-[#7289DA] hover:bg-[#5e75c4] border-b-4 border-blue-500 hover:border-blue-600 px-4 py-2 select-none focus:outline-none">Join our discord!</button>
                             </Link>
                           </div>
                         </li>
@@ -89,12 +90,10 @@ export default function Home() {
                   </ul>
                 </div>
             </div>
-          {/*footer here*/}
+          <Footer />
         </div>
     </>
   );
 }
-
-
 
 //'https://api.mcsrvstat.us/2/dev.baezor.com'

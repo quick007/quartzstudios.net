@@ -28,7 +28,7 @@ const Navbar = (props) => {
                 <meta property="twitter:description" content="Quartz Studios creates next-generation experiences in Minecraft. Experience something idk what to put here tbh. " />
                 <meta property="twitter:image" content="https://quartzstudios-net.vercel.app/logos/embead.jpg" />
             </Head>
-            <nav className="text-gray-100 bg-gray-900 body-font shadow max-width-xl">
+            <nav className="text-gray-100 bg-gray-800 shadow-lg">
                 <div className="h-16 w-16 flex items-center justify-center ml-4 space-x-4">
                     <Link href="/">
                         <img src="logos/main.jpg" className="h-10 hover:h-12 w-auto cursor-pointer" alt="Back to home logo" />
@@ -37,7 +37,7 @@ const Navbar = (props) => {
             </nav>
             
         </>
-    )
+    );
 }
 
 export default Navbar;
