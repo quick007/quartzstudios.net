@@ -8,11 +8,30 @@ const Footer = (props) => {
         <>
             {/*Thicc divice footer*/}
             <div className="w-full bg-gray-800 bottom-0 hidden md:block">
-                <div className="flex justify-center items-center py-6">
-                    <div className="">
-                        <h2 className="tracking-wider text-xl xs:text-3xl  font-semibold uppercase text-gray-200">Quartz Studios</h2>
+                <div className="grid grid-cols-7 max-w-[75rem] mx-auto py-6 space-x-4">
+                    <div className="left-0 col-span-4">
+                        <h2 className="tracking-wider text-3xl  font-semibold uppercase text-gray-200">Quartz Studios</h2>
                         <p className="prose-xl text-gray-200">Creating next-generation Minecraft experiences</p>
-                        <hr className="ml-2 mt-1 w-16 border-2 border-[#407cea]" />
+                        <hr className="ml-2 mt-1 w-16 border-2 border-blue-600" />
+                    </div>
+                    <div className="flex flex-col">
+                        <h2 className="tracking-wider text-lg  font-semibold uppercase text-gray-200">Social</h2>
+                        <hr className="mt-1 w-16 border-2 border-blue-600" />
+                        <a href="https://discord.gg/ZfPwQ9AhbW" className="ml-1 prose-sm text-gray-300 hover:underline">Discord</a>
+                        <a href="https://github.com/QuartzStudios" className="ml-1 prose-sm text-gray-300 hover:underline">Github</a>
+                    </div>
+                    <div className="flex flex-col">
+                        <h2 className="tracking-wider text-lg font-semibold uppercase text-gray-200">Resources</h2>
+                        <hr className="mt-1 w-16 border-2 border-blue-600" />
+                        <a href="https://store.quartzstudios.net/" className="ml-1 prose-sm text-gray-300 hover:underline">Store</a>
+                        <a href="https://github.com/quick007/quartzstudios.net" className="ml-1 prose-sm text-gray-300 hover:underline">Contribute</a>
+                        <Link href="/joinus"><a className="ml-1 prose-sm text-gray-300 hover:underline">Team Application</a></Link>
+                    </div>
+                    <div className="flex flex-col">
+                        <h2 className="tracking-wider text-lg  font-semibold uppercase text-gray-200">Policies</h2>
+                        <hr className="mt-1 w-16 border-2 border-blue-600" />
+                        <Link href="/rules"><a className="ml-1 prose-sm text-gray-300 hover:underline">Rules</a></Link>
+                        <a className="ml-1 prose-sm text-gray-300 hover:underline"></a>
                     </div>
                 </div>
             </div>
@@ -22,12 +41,12 @@ const Footer = (props) => {
                 <div className="flex flex-col justify-center items-center py-6">
                     <h2 className="tracking-wider text-xl xs:text-3xl font-semibold uppercase text-gray-200">Quartz Studios</h2>
                     <p className="prose-xl text-gray-200 text-center hidden xs:block">Creating next-generation Minecraft experiences</p>
-                    <hr className="ml-2 mt-1 w-16 border-2 border-[#407cea] mb-4" />
+                    <hr className="ml-2 mt-1 w-16 border-2 border-blue-600 mb-4" />
                     <div className="flex text-gray-700 space-x-2">
                         <a href="https://discord.gg/ZfPwQ9AhbW" className="rounded-full bg-gray-900 p-2">
                             {discordsvg()}
                         </a>
-                        <a href="https://discord.gg/ZfPwQ9AhbW" className="rounded-full bg-gray-900 p-2">
+                        <a href="https://store.quartzstudios.net/" className="rounded-full bg-gray-900 p-2">
                             <ShoppingCartIcon className="w-6 h-auto" />
                         </a>
                     </div>
