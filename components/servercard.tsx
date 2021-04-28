@@ -29,12 +29,12 @@ const ServerCard = (props) => {
                             <span className="block md:hidden group-hover:hidden">{truncate(props.desc,70)}</span>
                             <span className="hidden group-hover:block">{props.desc}</span>
                         </p>
-                        <Link href={"/" + props.name}>
+                        {/*<Link href={"/" + props.name}>
                             <h3 className="group rounded-full select-none px-2 prose text-gray-200 opacity-60 hover:opacity-90 font-semibold inline-flex hover:bg-gray-700 cursor-pointer mb-5">
                                 Learn More 
                                 <ArrowRightIcon className="ml-2 group-hover:ml-3 h-7 w-5" />
                             </h3>
-                        </Link>
+                        </Link>*/}
                         <div className="relative">
 
                             {/*Player counter/offline/coming soon thing*/}
