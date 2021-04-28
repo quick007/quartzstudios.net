@@ -37,7 +37,7 @@ const Navbar = (props) => {
                     </div>
                     <div className="flex flex-grow flex-row-reverse items-center mr-2">
                         <Link href="/store">
-                            <a className="main-btn font-sans">
+                            <a className="main-btn font-sans shadow-2xl">
                                 Store
                             </a>
                         </Link>

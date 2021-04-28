@@ -8,38 +8,44 @@ const Footer = (props) => {
         <>
             {/*Thicc divice footer*/}
             <div className="w-full bg-gray-800 bottom-0 hidden md:block">
-                <div className="grid grid-cols-7 max-w-xl md:max-w-4xl xl:max-w-[78rem] mx-auto py-6 space-x-4 md:ml-5 lg:ml-auto">
-                    <div className="left-0 col-span-4">
-                        <h2 className="tracking-wider text-3xl  font-semibold uppercase text-gray-200">Quartz Studios</h2>
-                        <p className="prose-xl text-gray-200">Creating next-generation Minecraft experiences</p>
-                        <hr className="ml-2 mt-1 w-16 border-2 border-blue-600" />
+                <div className="flex flex-row max-w-xl md:max-w-4xl xl:max-w-[78rem] mx-auto py-6 space-x-4 md:ml-5 lg:ml-auto">
+                    {/*Title bit*/}
+                    <div>
+                        <div className="flex flex-col">
+                            <h2 className="tracking-wider text-3xl  font-semibold uppercase text-gray-200">Quartz Studios</h2>
+                            <p className="prose-xl text-gray-200">Creating next-generation Minecraft experiences</p>
+                            <hr className="ml-2 mt-1 w-16 border-2 border-blue-600" />
+                        </div>
                     </div>
-                    <div className="flex flex-col">
-                        <h2 className="tracking-wider text-lg  font-semibold uppercase text-gray-200">Social</h2>
-                        <hr className="mt-1 w-16 border-2 border-blue-600" />
-                        <a href="https://discord.gg/ZfPwQ9AhbW" className="ml-1 prose-sm text-gray-300 hover:underline">Discord</a>
-                        <a href="https://github.com/QuartzStudios" className="ml-1 prose-sm text-gray-300 hover:underline">Github</a>
-                    </div>
-                    <div className="flex flex-col">
-                        <h2 className="tracking-wider text-lg font-semibold uppercase text-gray-200">Resources</h2>
-                        <hr className="mt-1 w-16 border-2 border-blue-600" />
-                        <a href="https://store.quartzstudios.net/" className="ml-1 prose-sm text-gray-300 hover:underline">Store</a>
-                        <a href="https://github.com/quick007/quartzstudios.net" className="ml-1 prose-sm text-gray-300 hover:underline">Contribute</a>
-                        <Link href="/resources/joinus">
-                            <a className="ml-1 prose-sm text-gray-300 hover:underline">
-                                Team Application
-                            </a>
-                        </Link>
-                    </div>
-                    <div className="flex flex-col">
-                        <h2 className="tracking-wider text-lg  font-semibold uppercase text-gray-200">Policies</h2>
-                        <hr className="mt-1 w-16 border-2 border-blue-600" />
-                        <Link href="/rules">
-                            <a className="ml-1 prose-sm text-gray-300 hover:underline">
-                                Rules
-                            </a>
-                        </Link>
-                        <a className="ml-1 prose-sm text-gray-300 hover:underline"></a>
+                    {/*Rows of info*/}
+                    <div className="flex flex-grow flex-row-reverse">
+                        <div className="flex flex-col ml-32">
+                            <h2 className="tracking-wider text-lg  font-semibold uppercase text-gray-200">Policies</h2>
+                            <hr className="mt-1 w-16 border-2 border-blue-600" />
+                            <Link href="/rules">
+                                <a className="ml-1 prose-sm text-gray-300 hover:underline">
+                                    Rules
+                                </a>
+                            </Link>
+                            <a className="ml-1 prose-sm text-gray-300 hover:underline"></a>
+                        </div>
+                        <div className="flex flex-col mx-4">
+                            <h2 className="tracking-wider text-lg font-semibold uppercase text-gray-200">Resources</h2>
+                            <hr className="mt-1 w-16 border-2 border-blue-600" />
+                            <a href="https://store.quartzstudios.net/" className="ml-1 prose-sm text-gray-300 hover:underline">Store</a>
+                            <a href="https://github.com/quick007/quartzstudios.net" className="ml-1 prose-sm text-gray-300 hover:underline">Contribute</a>
+                            <Link href="/resources/joinus">
+                                <a className="ml-1 prose-sm text-gray-300 hover:underline">
+                                    Team Application
+                                </a>
+                            </Link>
+                        </div>
+                        <div className="flex flex-col">
+                            <h2 className="tracking-wider text-lg  font-semibold uppercase text-gray-200">Social</h2>
+                            <hr className="mt-1 w-16 border-2 border-blue-600" />
+                            <a href="https://discord.gg/ZfPwQ9AhbW" className="ml-1 prose-sm text-gray-300 hover:underline">Discord</a>
+                            <a href="https://github.com/QuartzStudios" className="ml-1 prose-sm text-gray-300 hover:underline">Github</a>
+                        </div>
                     </div>
                 </div>
             </div>
