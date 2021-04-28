@@ -23,10 +23,11 @@ const ServerCard = (props) => {
                     {/*Card Content*/}
                     <li className="m-3">
                         <h2 className="prose-2xl text-white font-semibold mx-1">{props.name}</h2>
-                        <p className="prose-lg text-gray-200 mx-2 break-words h-24 md:h-16">
-                            <span className="hidden lg:block">{truncate(props.desc,70)}</span>
-                            <span className="hidden md:block lg:hidden">{truncate(props.desc,130)}</span>
-                            <span className="block md:hidden">{truncate(props.desc,70)}</span>
+                        <p className="group prose-lg text-gray-200 mx-2 break-words h-24 md:h-16 hover:h-auto">
+                            <span className="hidden lg:block group-hover:hidden">{truncate(props.desc,70)}</span>
+                            <span className="hidden md:block lg:hidden group-hover:hidden">{truncate(props.desc,130)}</span>
+                            <span className="block md:hidden group-hover:hidden">{truncate(props.desc,70)}</span>
+                            <span className="hidden group-hover:block">{props.desc}</span>
                         </p>
                         <Link href={"/" + props.name}>
                             <h3 className="group rounded-full select-none px-2 prose text-gray-200 opacity-60 hover:opacity-90 font-semibold inline-flex hover:bg-gray-700 cursor-pointer mb-5">

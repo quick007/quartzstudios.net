@@ -3,6 +3,11 @@ import Link from "next/link";
 import Head from "next/head";
 
 const Navbar = (props) => {
+    function isPage() {
+        if (props.page === "rules") {
+            
+        }
+    }
     return (
         <>
             <html lang="en" />
@@ -41,8 +46,8 @@ const Navbar = (props) => {
                                 Store
                             </a>
                         </Link>
-                        <Link href="/rules">
-                            <a className="bg-gray-600 hover:opacity-70 px-4 py-1 rounded-sm ml-3 font-sans">
+                        <Link href="/resources/rules">
+                            <a className={"bg-gray-600 hover:opacity-70 px-4 py-1 rounded-sm ml-3 font-sans" + isPage()}>
                                 Rules
                             </a>
                         </Link>
@@ -55,3 +60,4 @@ const Navbar = (props) => {
 }
 
 export default Navbar;
+

@@ -79,7 +79,7 @@ export default function Home() {
                         <li className="flex flex-col sm:flex-row justify-center items-center">
                           <img src="logos/discord.jpg" alt="Wumpus from discord. Made with ♥ by @drawwithkristi on pinterest" className="w-16 xs:w-64 md:w-96" />
                           <div className="md:ml-10 ml-2 sm:ml-0 mr-2 pt-4">
-                            <h2 className="tracking-wider text-xl xs:text-3xl mb-4 xs:mb-0 font-semibold uppercase text-gray-200 text-center sm:text-left">Let's be social! lolll</h2>
+                            <h2 className="tracking-wider text-xl xs:text-3xl mb-4 xs:mb-0 font-semibold uppercase text-gray-200 text-center sm:text-left">Let's be social!</h2>
                             <p className="hidden xs:block sm:w-64 md:w-96 text-gray-200 font-roboto my-6 pl-2 text-center sm:text-left">Here at Quartz Studios we think communication is the key to an amazing community. Due to that, we highly value our Discord community and the way it allows us to connect our server community together! Wether you want to simply chat with people or get support, our discord is the place.</p>
                             <Link href="/discord">
                               <button className="w-full sm:w-auto  text-white text-lg font-semibold shadow bg-[#7289DA] hover:bg-[#5e75c4] border-b-4 border-blue-500 hover:border-blue-600 px-4 py-2 select-none focus:outline-none">Join our discord!</button>
