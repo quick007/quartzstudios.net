@@ -8,7 +8,7 @@ const Footer = (props) => {
         <>
             {/*Thicc divice footer*/}
             <div className="w-full bg-gray-800 bottom-0 hidden md:block">
-                <div className="flex flex-row max-w-xl md:max-w-4xl xl:max-w-[78rem] mx-auto py-6 space-x-4 md:ml-5 lg:ml-auto">
+                <div className="flex flex-row max-w-xl md:max-w-5xl xl:max-w-[78rem] mx-auto py-6 space-x-4 md:ml-5 lg:ml-auto">
                     {/*Title bit*/}
                     <div>
                         <div className="flex flex-col">
@@ -19,8 +19,8 @@ const Footer = (props) => {
                     </div>
                     {/*Rows of info*/}
                     <div className="flex flex-grow flex-row-reverse">
-                        <div className="flex flex-col ml-32">
-                            <h2 className="tracking-wider text-lg  font-semibold uppercase text-gray-200">Policies</h2>
+                        <div className="flex flex-col mr-2 lg:mr-0">
+                            <h2 className="tracking-wider text-lg font-semibold uppercase text-gray-200">Policies</h2>
                             <hr className="mt-1 w-16 border-2 border-blue-600" />
                             <Link href="/rules">
                                 <a className="ml-1 prose-sm text-gray-300 hover:underline">
@@ -29,7 +29,7 @@ const Footer = (props) => {
                             </Link>
                             <a className="ml-1 prose-sm text-gray-300 hover:underline"></a>
                         </div>
-                        <div className="flex flex-col mx-4">
+                        <div className="flex flex-col mx-10 xl:mx-16">
                             <h2 className="tracking-wider text-lg font-semibold uppercase text-gray-200">Resources</h2>
                             <hr className="mt-1 w-16 border-2 border-blue-600" />
                             <a href="https://store.quartzstudios.net/" className="ml-1 prose-sm text-gray-300 hover:underline">Store</a>
