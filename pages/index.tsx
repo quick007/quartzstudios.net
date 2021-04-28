@@ -40,7 +40,7 @@ export default function Home() {
                       {/*Servercards*/}
                       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10">
                         <ServerCard name="Dawn Horizons" desc="Experience an enhanced Survival experience, explore distant lands and create what you want on your own personal island." img="/main/demo4.jpg" logo="logos/dh.jpg" ip="" open={false} />
-                        <ServerCard name="Bytegames" desc="Enjoy a library of unique and custom Minigames made by Quartz Studios." img="/main/demo5.jpg" logo="logos/main.jpg" ip="" open={false} />
+                        <ServerCard name="Quartz Games" desc="Enjoy a library of unique and custom Minigames made by Quartz Studios." img="/main/quartz-games.jpg" logo="logos/main.jpg" ip="" open={false} />
                       </div>
                     </li>
                     <li>
@@ -81,7 +81,7 @@ export default function Home() {
                           <div className="md:ml-10 ml-2 sm:ml-0 mr-2 pt-4">
                             <h2 className="tracking-wider text-xl xs:text-3xl mb-4 xs:mb-0 font-semibold uppercase text-gray-200 text-center sm:text-left">Let's be social!</h2>
                             <p className="hidden xs:block sm:w-64 md:w-96 text-gray-200 font-roboto my-6 pl-2 text-center sm:text-left">Here at Quartz Studios we think communication is the key to an amazing community. Due to that, we highly value our Discord community and the way it allows us to connect our server community together! Wether you want to simply chat with people or get support, our discord is the place.</p>
-                            <Link href="https://discord.gg/ZfPwQ9AhbW">
+                            <Link href="/discord">
                               <button className="w-full sm:w-auto  text-white text-lg font-semibold shadow bg-[#7289DA] hover:bg-[#5e75c4] border-b-4 border-blue-500 hover:border-blue-600 px-4 py-2 select-none focus:outline-none">Join our discord!</button>
                             </Link>
                           </div>
@@ -98,3 +98,4 @@ export default function Home() {
 }
 
 //'https://api.mcsrvstat.us/2/dev.baezor.com'
+

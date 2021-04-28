@@ -37,14 +37,14 @@ const Navbar = (props) => {
                     </div>
                     <div className="flex flex-grow flex-row-reverse items-center mr-2">
                         <Link href="/store">
-                            <a className="bg-blue-600 hover:opacity-70 px-4 py-1 rounded-sm ml-3">
+                            <a className="main-btn font-sans">
                                 Store
                             </a>
                         </Link>
                         <Link href="/rules">
-                        <a className="bg-gray-600 hover:opacity-70 px-4 py-1 rounded-sm ml-3">
-                            Rules
-                        </a>
+                            <a className="bg-gray-600 hover:opacity-70 px-4 py-1 rounded-sm ml-3 font-sans">
+                                Rules
+                            </a>
                         </Link>
                     </div>
                 </div>

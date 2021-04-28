@@ -17,6 +17,11 @@ module.exports = withMDX({
           destination: 'https://store.quartzstudios.net',
           permanent: true,
         },
+        {
+          source: '/discord',
+          destination: 'https://discord.gg/ZfPwQ9AhbW',
+          permanent: true,
+        },
       ]
     },
   })

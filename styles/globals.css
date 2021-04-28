@@ -38,3 +38,8 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #4C626C; 
 }
+
+.main-btn {
+  font-family: 'Roboto', sans-serif;
+  @apply bg-blue-600 hover:opacity-70 px-4 py-1 rounded-sm ml-3 text-gray-100 text-center
+}

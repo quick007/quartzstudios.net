@@ -25,12 +25,20 @@ const Footer = (props) => {
                         <hr className="mt-1 w-16 border-2 border-blue-600" />
                         <a href="https://store.quartzstudios.net/" className="ml-1 prose-sm text-gray-300 hover:underline">Store</a>
                         <a href="https://github.com/quick007/quartzstudios.net" className="ml-1 prose-sm text-gray-300 hover:underline">Contribute</a>
-                        <Link href="/joinus"><a className="ml-1 prose-sm text-gray-300 hover:underline">Team Application</a></Link>
+                        <Link href="/resources/joinus">
+                            <a className="ml-1 prose-sm text-gray-300 hover:underline">
+                                Team Application
+                            </a>
+                        </Link>
                     </div>
                     <div className="flex flex-col">
                         <h2 className="tracking-wider text-lg  font-semibold uppercase text-gray-200">Policies</h2>
                         <hr className="mt-1 w-16 border-2 border-blue-600" />
-                        <Link href="/rules"><a className="ml-1 prose-sm text-gray-300 hover:underline">Rules</a></Link>
+                        <Link href="/rules">
+                            <a className="ml-1 prose-sm text-gray-300 hover:underline">
+                                Rules
+                            </a>
+                        </Link>
                         <a className="ml-1 prose-sm text-gray-300 hover:underline"></a>
                     </div>
                 </div>
@@ -43,12 +51,16 @@ const Footer = (props) => {
                     <p className="prose-xl text-gray-200 text-center hidden xs:block">Creating next-generation Minecraft experiences</p>
                     <hr className="ml-2 mt-1 w-16 border-2 border-blue-600 mb-4" />
                     <div className="flex text-gray-500 space-x-2"> {/*modify text color to change svg colors*/}
-                        <a href="https://discord.gg/ZfPwQ9AhbW" className="rounded-full bg-gray-900 bg-opacity-50 p-2">
-                            {discordsvg()}
-                        </a>
-                        <a href="https://store.quartzstudios.net/" className="rounded-full bg-gray-900 bg-opacity-50 p-2">
-                            <ShoppingCartIcon className="w-6 h-auto" />
-                        </a>
+                        <Link href="/discord">
+                            <a className="rounded-full bg-gray-900 bg-opacity-50 p-2">
+                                {discordsvg()}
+                            </a>
+                        </Link>
+                        <Link href="/store">
+                            <a className="rounded-full bg-gray-900 bg-opacity-50 p-2">
+                                <ShoppingCartIcon className="w-6 h-auto" />
+                            </a>
+                        </Link>
                     </div>
                 </div>
             </div>
