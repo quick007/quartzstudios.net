@@ -11,21 +11,21 @@ const Navbar = (props) => {
 
                 {/*Primary Meta Tags*/}
                 <meta name="title" content={props.title + " | Quartz Studios"} />
-                <meta name="description" content="Quartz Studios creates next-generation experiences in Minecraft. Experience something idk what to put here tbh." />
-                <meta name="theme-color" content="#263137"/>
+                <meta name="description" content="Quartz Studios creates next-generation experiences in Minecraft. Experience servers that push past Minecrafts limitations - all while  giving you the best product." />
+                <meta name="theme-color" content="#2563EB"/>
 
                 {/*Open Graph / Facebook & Discord*/}
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://quartzstudios.net" />
                 <meta property="og:title" content={props.title + " | Quartz Studios"} />
-                <meta property="og:description" content="Quartz Studios creates next-generation experiences in Minecraft. Experience something idk what to put here tbh. " />
+                <meta property="og:description" content="Quartz Studios creates next-generation experiences in Minecraft. Experience servers that push past Minecrafts limitations - all while  giving you the best product." />
                 <meta property="og:image" content="https://quartzstudios-net.vercel.app/logos/embead.jpg" />
 
                 {/*Twitter*/}
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:url" content="https://quartzstudios.net" />
                 <meta property="twitter:title" content={props.title + " | Quartz Studios"} />
-                <meta property="twitter:description" content="Quartz Studios creates next-generation experiences in Minecraft. Experience something idk what to put here tbh. " />
+                <meta property="twitter:description" content="Quartz Studios creates next-generation experiences in Minecraft. Experience servers that push past Minecrafts limitations - all while  giving you the best product." />
                 <meta property="twitter:image" content="https://quartzstudios-net.vercel.app/logos/embead.jpg" />
             </Head>
             <nav className="w-full text-gray-100 bg-gray-800 shadow-lg sticky top-0 z-40">
