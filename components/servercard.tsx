@@ -23,12 +23,17 @@ const ServerCard = (props) => {
                     {/*Card Content*/}
                     <li className="m-3">
                         <h2 className="prose-2xl text-white font-semibold mx-1">{props.name}</h2>
-                        <p className="group prose-lg text-gray-200 mx-2 break-words h-24 md:h-16 hover:h-auto">
-                            <span className="hidden lg:block group-hover:hidden">{truncate(props.desc,70)}</span>
-                            <span className="hidden md:block lg:hidden group-hover:hidden">{truncate(props.desc,130)}</span>
-                            <span className="block md:hidden group-hover:hidden">{truncate(props.desc,70)}</span>
-                            <span className="hidden group-hover:block">{props.desc}</span>
-                        </p>
+                        <button className="group w-full focus:h-auto h-24 md:h-16 relative focus:outline-none mb-2">
+                            <p className="prose-lg group-hover:blur text-gray-200 mx-2 break-words text-left">
+                                <span className="hidden lg:block group-focus:hidden">{truncate(props.desc,69)}</span>
+                                <span className="hidden md:block lg:hidden group-focus:hidden">{truncate(props.desc,130)}</span>
+                                <span className="block md:hidden group-hover:focus">{truncate(props.desc,69)}</span>
+                                <span className="hidden group-focus:block">{props.desc}</span>
+                            </p>
+                            <div className="hidden group-hover:block group-focus:hidden backdrop-filter backdrop-blur-sm absolute inset-0 group-hover:flex justify-center items-center">
+                                <p className="rounded-full select-none px-2 prose text-gray-200 font-semibold inline-flex bg-gray-800 bg-opacity-60">Expand</p>
+                            </div>
+                        </button>
                         {/*<Link href={"/" + props.name}>
                             <h3 className="group rounded-full select-none px-2 prose text-gray-200 opacity-60 hover:opacity-90 font-semibold inline-flex hover:bg-gray-700 cursor-pointer mb-5">
                                 Learn More 

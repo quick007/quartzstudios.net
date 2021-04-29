@@ -41,6 +41,7 @@ export default function Home() {
                       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10">
                         <ServerCard name="Dawn Horizons" desc="Experience an enhanced Survival experience, explore distant lands and create what you want on your own personal island." img="/main/demo4.jpg" logo="logos/dh.jpg" ip="" open={false} />
                         <ServerCard name="Quartz Games" desc="Enjoy a library of unique and custom Minigames made by Quartz Studios." img="/main/quartz-games.jpg" logo="logos/main.jpg" ip="" open={false} />
+                        <ServerCard name="Coming soon..." desc="A MCMMO-style adventure game you've never seen before in Minecraft, with the high quality standered you've come to expect from us. It places emphisis on looting, questing, pve." img="/main/demo5.jpg" logo="logos/coming-soon.jpg" ip="" open={false} />
                       </div>
                     </li>
                     <li>
