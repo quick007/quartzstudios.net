@@ -22,9 +22,9 @@ const ServerCard = (props) => {
 
                     {/*Card Content*/}
                     <li className="m-3">
-                        <h2 className="prose-2xl text-white font-semibold mx-1">{props.name}</h2>
+                        <h2 className="prose prose-2xl text-white font-semibold mx-1">{props.name}</h2>
                         <button className="group w-full focus:h-auto h-24 md:h-16 relative focus:outline-none mb-2">
-                            <p className="prose-lg group-hover:blur text-gray-200 mx-2 break-words text-left">
+                            <p className="prose prose-lg group-hover:blur text-gray-200 mx-2 break-words text-left">
                                 <span className="hidden lg:block group-focus:hidden">{truncate(props.desc,69)}</span>
                                 <span className="hidden md:block lg:hidden group-focus:hidden">{truncate(props.desc,130)}</span>
                                 <span className="block md:hidden group-hover:focus">{truncate(props.desc,69)}</span>
