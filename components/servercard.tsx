@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { ArrowRightIcon } from "@heroicons/react/outline";
 
@@ -7,7 +7,7 @@ import { ArrowRightIcon } from "@heroicons/react/outline";
 const ServerCard = (props) => {
     const online = false
     const playercount = "0"
-
+    const [expanded, setExpanded] = useState(false)
     return (
         <>
             <div className="flex bg-gray-900 shadow-lg w-full lg:w-96 border-b-2 border-red-600">
@@ -23,14 +23,20 @@ const ServerCard = (props) => {
                     {/*Card Content*/}
                     <li className="m-3">
                         <h2 className="prose prose-2xl text-white font-semibold mx-1">{props.name}</h2>
-                        <button className="group w-full focus:h-auto h-24 md:h-16 relative focus:outline-none mb-2">
-                            <p className="prose prose-lg group-hover:blur text-gray-200 mx-2 break-words text-left">
-                                <span className="hidden lg:block group-focus:hidden">{truncate(props.desc,69)}</span>
-                                <span className="hidden md:block lg:hidden group-focus:hidden">{truncate(props.desc,130)}</span>
-                                <span className="block md:hidden group-hover:focus">{truncate(props.desc,69)}</span>
-                                <span className="hidden group-focus:block">{props.desc}</span>
+                        <button 
+                            className={"group relative w-full h-24 md:h-16 focus:outline-none mb-2 " + (expanded ? "!h-auto" : "")}
+                            onClick={() => {setExpanded(!expanded)}}
+                        >
+                            <p 
+                                className="prose prose-lg group-hover:blur text-gray-200 mx-2 break-words text-left"
+                                
+                            >
+                                <span className={"hidden lg:block " + (expanded ? "!hidden" : "")}>{truncate(props.desc,69)}</span>
+                                <span className={"hidden md:block lg:hidden " + (expanded ? "!hidden" : "")}>{truncate(props.desc,130)}</span>
+                                <span className={"block md:hidden " + (expanded ? "!hidden" : "")}>{truncate(props.desc,69)}</span>
+                                <span className={expanded ? "block" : "hidden"}>{props.desc}</span>
                             </p>
-                            <div className="hidden group-hover:block group-focus:hidden backdrop-filter backdrop-blur-sm absolute inset-0 group-hover:flex justify-center items-center">
+                            <div className={"hidden group-hover:block backdrop-filter backdrop-blur-sm absolute inset-0 group-hover:flex justify-center items-center " + (expanded ? "!hidden" : "")}>
                                 <p className="rounded-full select-none px-2 prose text-gray-200 font-semibold inline-flex bg-gray-800 bg-opacity-60">Expand</p>
                             </div>
                         </button>
