@@ -29,7 +29,7 @@ const Footer = (props) => {
                             </Link>
                             <a className="ml-1 prose-sm text-gray-300 hover:underline"></a>
                         </div>
-                        <div className="flex flex-col mx-10 xl:mx-16">
+                        <div className="flex flex-col mx-10">
                             <h2 className="tracking-wider text-lg font-semibold uppercase text-gray-200">Resources</h2>
                             <hr className="mb-2 w-16 border-t-[3px] border-blue-600" />
                             <a href="https://store.quartzstudios.net/" className="ml-1 prose-sm text-gray-300 hover:underline">Store</a>

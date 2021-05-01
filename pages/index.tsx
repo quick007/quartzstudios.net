@@ -19,7 +19,7 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-b from-[rgba(0,0,0,0)] via-[rgba(0,0,0,0)] to-gray-700 h-[calc(100vh-200px)]" />
               <div className="flex items-center justify-center">
                 <div className="absolute top-[15vh] flex flex-col items-center justify-center">
-                  <img src="/logos/dh.jpg" className="w-96 pb-5 px-2" alt="Featured server logo" />
+                  <img src="/logos/dh.jpg" width="600px" className="w-96 2xl:w-/12 pb-5 px-2" alt="Featured server logo" />
                   <div className="rounded-full select-none px-2 prose text-gray-200 font-semibold inline-flex bg-green-600 mb-2">110 Players Online</div>
                   <button 
                     onClick={() => navigator.clipboard.writeText("dev.baezor.com")} 
@@ -39,7 +39,7 @@ export default function Home() {
                     <li className="flex justify-center">
                       {/*Servercards*/}
                       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10">
-                        <ServerCard name="Dawn Horizons" desc="Experience an enhanced Survival experience, explore distant lands and create what you want on your own personal island." img="/main/demo4.jpg" logo="logos/dh.jpg" ip="" open={false} />
+                        <ServerCard name="Dawn Horizons" desc="Experience an enhanced Survival experience, explore distant lands and create whatever your heart desires!." img="/main/demo4.jpg" logo="logos/dh.jpg" ip="" open={false} />
                         <ServerCard name="Quartz Games" desc="Enjoy a library of unique and custom Minigames made by Quartz Studios." img="/main/quartz-games.jpg" logo="logos/main.jpg" ip="" open={false} />
                         <ServerCard name="Coming soon..." desc="A MCMMO-style adventure game you've never seen before in Minecraft, with the high quality standered you've come to expect from us. It places emphisis on looting, questing, pve." img="/main/demo5.jpg" logo="logos/coming-soon.jpg" ip="pls work !!!! :flushed:" open={true} />
                       </div>

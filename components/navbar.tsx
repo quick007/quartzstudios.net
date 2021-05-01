@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Head from "next/head";
+import { MenuAlt3Icon, XIcon } from "@heroicons/react/outline";
 
 const Navbar = (props) => {
     function isPage() {
@@ -8,11 +9,14 @@ const Navbar = (props) => {
             
         }
     }
+
+    const [open, setOpen] = useState(false)
+
     return (
         <>
             <html lang="en" />
             <Head>
-                <title>{props.title + " | Quartz Studios"}</title>
+                <title>{"Quartz Studios | " + props.title}</title>
 
                 {/*Primary Meta Tags*/}
                 <meta name="title" content={props.title + " | Quartz Studios"} />
@@ -33,27 +37,35 @@ const Navbar = (props) => {
                 <meta property="twitter:description" content="Quartz Studios creates next-generation experiences in Minecraft. Experience servers that push past Minecrafts limitations - all while  giving you the best product." />
                 <meta property="twitter:image" content="https://quartzstudios-net.vercel.app/logos/embead.jpg" />
             </Head>
-            <nav className="w-full text-gray-100 bg-gray-800 shadow-lg sticky top-0 z-40">
-                <div className="mx-auto max-w-xl md:max-w-4xl xl:max-w-[78rem] flex">
-                    <div className="h-16 w-16 flex items-center justify-center">
+            <nav className="w-full text-gray-100 bg-gray-800 shadow-lg sticky top-[-1px] z-40">
+                <div className="mx-auto max-w-xl md:max-w-4xl xl:max-w-[78rem] flex flex-col md:flex-row">
+                    <div className="h-16 md:w-16 flex w-full items-center justify-center relative md:static">
                         <Link href="/">
-                            <img src="/logos/main.jpg" className="h-10 hover:h-12 w-auto cursor-pointer" alt="Back to home logo" />
+                            <img src="/logos/main.jpg" className="h-10 hover:h-12 w-auto cursor-pointer absolute md:static left-[5px]" alt="Back to home logo" />
                         </Link>
+                        <button 
+                            className="bg-gray-600 hover:opacity-70 px-2 py-1 rounded-sm right-[5px] absolute md:hidden focus:outline-none"
+                            onClick={() => setOpen(!open)}
+                        >
+                            <MenuAlt3Icon className={"w-6 h-auto " + (open ? "hidden" : "")} />
+                            <XIcon className={"w-6 h-auto " + (open ? "" : "hidden")} />
+                        </button>
                     </div>
-                    <div className="flex flex-grow flex-row-reverse items-center mr-2">
+                    <div className={"flex flex-grow flex-col items-center md:flex-row-reverse mx-4 mb-4 md:ml-0 md:mr-2 md:mb-0 space-y-4 md:space-y-0 " + (open ? "" : "hidden")}>
                         <Link href="/store">
-                            <a className="main-btn font-sans shadow-2xl">
+                            <a className="main-btn font-sans w-full md:w-auto mx-auto md:mr-0 md:ml-3">
                                 Store
                             </a>
                         </Link>
                         <Link href="/resources/rules">
-                            <a className={"bg-gray-600 hover:opacity-70 px-4 py-1 rounded-sm ml-3 font-sans" + (props.isRules ? "border-b border-blue-600" : "")}>
+                            <a className={"bg-gray-600 hover:opacity-70 px-4 py-1 rounded-sm font-sans w-full md:w-auto mx-auto md:mx-0 md:ml-3 text-center " + (props.isRules ? "border-b-2 border-blue-600" : "")}>
                                 Rules
                             </a>
                         </Link>
                         <Link href="/discord">
-                            <a className="bg-gray-600 hover:opacity-70 px-4 py-1 rounded-sm ml-3 font-sans hidden md:block">
-                                {DiscordSvg()}
+                            <a className="bg-gray-600 hover:opacity-70 px-4 py-1 rounded-sm font-sans w-full md:w-auto mx-auto md:mr-0 md:ml-3 text-center">
+                                <span className="hidden md:block">{DiscordSvg()}</span>
+                                <span className="md:hidden">Discord</span>
                             </a>
                         </Link>
                     </div>
