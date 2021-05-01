@@ -51,19 +51,19 @@ const Navbar = (props) => {
                             <XIcon className={"w-6 h-auto " + (open ? "" : "hidden")} />
                         </button>
                     </div>
-                    <div className={"flex flex-grow flex-col items-center md:flex-row-reverse mx-4 mb-4 md:ml-0 md:mr-2 md:mb-0 space-y-4 md:space-y-0 " + (open ? "" : "hidden")}>
+                    <div className={"flex flex-grow flex-col items-center md:flex-row-reverse mx-4 md:ml-0 md:mr-2 md:mb-0 space-y-4 md:space-y-0 " + (open ? "mb-4" : "")}>
                         <Link href="/store">
-                            <a className="main-btn font-sans w-full md:w-auto mx-auto md:mr-0 md:ml-3">
+                            <a className={"main-btn font-sans w-full md:w-auto mx-auto md:mr-0 md:ml-3 " + (open ? "" : "hidden md:block")}>
                                 Store
                             </a>
                         </Link>
                         <Link href="/resources/rules">
-                            <a className={"bg-gray-600 hover:opacity-70 px-4 py-1 rounded-sm font-sans w-full md:w-auto mx-auto md:mx-0 md:ml-3 text-center " + (props.isRules ? "border-b-2 border-blue-600" : "")}>
+                            <a className={"bg-gray-600 hover:opacity-70 px-4 py-1 rounded-sm font-sans w-full md:w-auto mx-auto md:mx-0 md:ml-3 text-center " + (props.isRules ? "border-b-2 border-blue-600" : "") + (open ? "" : "hidden md:block")}>
                                 Rules
                             </a>
                         </Link>
                         <Link href="/discord">
-                            <a className="bg-gray-600 hover:opacity-70 px-4 py-1 rounded-sm font-sans w-full md:w-auto mx-auto md:mr-0 md:ml-3 text-center">
+                            <a className={"bg-gray-600 hover:opacity-70 px-4 py-1 rounded-sm font-sans w-full md:w-auto mx-auto md:mr-0 md:ml-3 text-center " + (open ? "" : "hidden md:block")}>
                                 <span className="hidden md:block">{DiscordSvg()}</span>
                                 <span className="md:hidden">Discord</span>
                             </a>
