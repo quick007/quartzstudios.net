@@ -58,7 +58,7 @@ const Navbar = (props) => {
                             </a>
                         </Link>
                         <Link href="/resources/rules">
-                            <a className={"bg-gray-600 hover:opacity-70 px-4 py-1 rounded-sm font-sans w-full md:w-auto mx-auto md:mx-0 md:ml-3 text-center " + (props.isRules ? "border-b-2 border-blue-600" : "") + (open ? "" : "hidden md:block")}>
+                            <a className={"bg-gray-600 hover:opacity-70 px-4 py-1 rounded-sm font-sans w-full md:w-auto mx-auto md:mx-0 md:ml-3 text-center " + (props.isRules && open ? "border-b-2 border-blue-500" : "") + (open ? "" : "hidden md:block")}>
                                 Rules
                             </a>
                         </Link>
