@@ -3,10 +3,22 @@ import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import ServerCard from "../components/servercard";
 import StaffCard from "../components/staffcard";
+import useSWR from "swr";
+import fetch from 'node-fetch';
 
+export async function fetcher(...args) {
+  const res = await fetch(...args)
+  return res.json()
+}
 
 export default function Home() {
-  
+  const loadFailed = "Failed to load!"
+  var playercount;
+  const { data, error } = useSWR('https://api.mcsrvstat.us/2/dev.baezor.com', fetcher);
+  if (error) playercount = loadFailed;
+  if (!data) playercount = "Loading!";
+  else if (!data.online) playercount = loadFailed;
+  else playercount = data.players.online
   return (
     <>
         {/*Header image and stuffz*/}
@@ -20,7 +32,7 @@ export default function Home() {
               <div className="flex items-center justify-center">
                 <div className="absolute top-[15vh] flex flex-col items-center justify-center">
                   <img src="/logos/dh.jpg" width="600px" className="w-96 2xl:w-8/12 pb-5 px-2" alt="Featured server logo" />
-                  <div className="rounded-full select-none px-2 prose text-gray-200 font-semibold inline-flex bg-green-600 mb-2">110 Players Online</div>
+                  <div className={"rounded-full select-none px-2 prose text-gray-200 font-semibold inline-flex mb-2 " + (playercount !== loadFailed ? "bg-green-600 " : "bg-red-700 ")}>{playercount} Players Online</div>
                   <button 
                     onClick={() => navigator.clipboard.writeText("dev.baezor.com")} 
                     className="group inline-flex text-gray-200 rounded-full px-2 bg-gray-800 hover:bg-gray-700 focus:bg-green-600 cursor-pointer font-roboto focus:outline-none"
@@ -39,7 +51,7 @@ export default function Home() {
                     <li className="flex justify-center">
                       {/*Servercards*/}
                       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10">
-                        <ServerCard name="Dawn Horizons" desc="Experience an enhanced Survival gamemode, explore distant lands and create whatever you desire on your own personal island." img="/main/demo4.jpg" logo="logos/dh.jpg" ip="" open={false} />
+                        <ServerCard name="Dawn Horizons" desc="Experience an enhanced Survival gamemode, explore distant lands and create whatever you desire on your own personal island." img="/main/demo4.jpg" logo="logos/dh.jpg" ip="dev.baezor.com" open={true} />
                         <ServerCard name="Quartz Games" desc="Enjoy a library of unique and custom Minigames made by Quartz Studios." img="/main/quartz-games.jpg" logo="logos/main.jpg" ip="" open={false} />
                         <ServerCard name="Coming soon..." desc="An MCMMO-style adventure game with an emphasis on questing, looting and pve. These elements combined with our high standard will deliver a Minecraft experience like no other." img="/main/demo5.jpg" logo="logos/coming-soon.jpg" ip="pls work !!!! :flushed:" open={false} />
                       </div>

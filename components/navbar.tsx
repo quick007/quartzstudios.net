@@ -4,11 +4,6 @@ import Head from "next/head";
 import { MenuAlt3Icon, XIcon } from "@heroicons/react/outline";
 
 const Navbar = (props) => {
-    function isPage() {
-        if (props.page === "rules") {
-            
-        }
-    }
 
     const [open, setOpen] = useState(false)
 
@@ -80,7 +75,7 @@ export default Navbar;
 
 function DiscordSvg() {
     return (
-    <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245 240" className="fill-current w-6 h-auto">
+    <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245 240" className="fill-current w-6 h-auto" aria-label="Discord Icon">
         <path
             className="st0"
             d="M104.4 103.9c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.2-5 10.2-11.1.1-6.1-4.5-11.1-10.2-11.1zM140.9 103.9c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.2-5 10.2-11.1s-4.5-11.1-10.2-11.1z"

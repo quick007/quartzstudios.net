@@ -1,12 +1,24 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { ArrowRightIcon } from "@heroicons/react/outline";
+import useSWR from "swr";
+import fetch from 'node-fetch'
 
+export async function fetcher(...args) {
+    const res = await fetch(...args)
+    return res.json()
+}
 
 
 const ServerCard = (props) => {
-    const online = false
-    const playercount = "0"
+    const loadFailed = "Failed to load!"
+    var playercount;
+    const { data, error } = useSWR('https://api.mcsrvstat.us/2/' + props.ip, fetcher);
+    if (error) playercount = loadFailed;
+    if (!data) playercount = "Loading!";
+    else if (!data.online) playercount = loadFailed;
+    else playercount = data.players.online + " Online"
+
     const [expanded, setExpanded] = useState(false)
     return (
         <>
@@ -23,17 +35,17 @@ const ServerCard = (props) => {
                     {/*Card Content*/}
                     <li className="m-3">
                         <h2 className="prose prose-2xl text-white font-semibold mx-1">{props.name}</h2>
-                        <button 
+                        <button
                             className={"group relative w-full h-24 md:h-16 focus:outline-none mb-2 " + (expanded ? "!h-auto" : "")}
-                            onClick={() => {setExpanded(!expanded)}}
+                            onClick={() => { setExpanded(!expanded) }}
                         >
-                            <p 
+                            <p
                                 className="prose prose-lg group-hover:blur text-gray-200 mx-2 break-words text-left"
-                                
+
                             >
-                                <span className={"hidden lg:block " + (expanded ? "!hidden" : "")}>{truncate(props.desc,69)}</span>
-                                <span className={"hidden md:block lg:hidden " + (expanded ? "!hidden" : "")}>{truncate(props.desc,130)}</span>
-                                <span className={"block md:hidden " + (expanded ? "!hidden" : "")}>{truncate(props.desc,69)}</span>
+                                <span className={"hidden lg:block " + (expanded ? "!hidden" : "")}>{truncate(props.desc, 69)}</span>
+                                <span className={"hidden md:block lg:hidden " + (expanded ? "!hidden" : "")}>{truncate(props.desc, 130)}</span>
+                                <span className={"block md:hidden " + (expanded ? "!hidden" : "")}>{truncate(props.desc, 69)}</span>
                                 <span className={expanded ? "block" : "hidden"}>{props.desc}</span>
                             </p>
                             <div className={"hidden group-hover:block backdrop-filter backdrop-blur-sm absolute inset-0 group-hover:flex justify-center items-center " + (expanded ? "!hidden" : "")}>
@@ -49,18 +61,18 @@ const ServerCard = (props) => {
                         <div className="relative">
 
                             {/*Player counter/offline/coming soon thing*/}
-                            <div className={"rounded-full select-none px-2 prose text-gray-200 font-semibold inline-flex " + (online ? "bg-green-600 " : "bg-red-700 ") + (props.open ? "block" : "hidden")}>
-                                {online ? <span>{playercount} Online</span> : <span>Offline</span>}
+                            <div className={"rounded-full select-none px-2 prose text-gray-200 font-semibold inline-flex " + (playercount !== loadFailed ? "bg-green-600 " : "bg-red-700 ") + (props.open ? "block" : "hidden")}>
+                                <span>{playercount}</span>
                             </div>
                             <div className={"rounded-full select-none px-2 prose text-gray-200 font-semibold inline-flex bg-gray-800 break-words " + (props.open ? "hidden" : "block")}>
                                 Coming Soon!
                             </div>
 
                             {/*Click to copy*/}
-                            <button 
-                                onClick={() => navigator.clipboard.writeText(props.ip)} 
+                            <button
+                                onClick={() => navigator.clipboard.writeText(props.ip)}
                                 className={"group absolute right-0 inline-flex text-gray-200 rounded-full px-2 bg-gray-800 hover:bg-gray-700 focus:bg-green-600 cursor-pointer font-roboto focus:outline-none "
-                                + (props.open ? "block" : "hidden")}
+                                    + (props.open ? "block" : "hidden")}
                             >
                                 <div className="relative select-none">
                                     <span className="group-hover:invisible group-focus:invisible">{props.ip}</span>
