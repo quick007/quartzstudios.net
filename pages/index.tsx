@@ -26,16 +26,16 @@ export default function Home() {
           <Navbar title="Next-Generation Minecraft Experiences" />
             <div className="relative">
               <div className="flex justify-center">
-                <img src="main/demo3.jpg" className="w-full min-w-[1280px] h-[calc(100vh-200px)] " alt="Background main page img" />
+                <img src="main/main.jpg" className="w-full min-w-[1280px] h-[calc(100vh-200px)] " alt="Background main page img" />
               </div>
               <div className="absolute inset-0 bg-gradient-to-b from-[rgba(0,0,0,0)] via-[rgba(0,0,0,0)] to-gray-700 h-[calc(100vh-200px)]" />
               <div className="flex items-center justify-center">
                 <div className="absolute top-[15vh] flex flex-col items-center justify-center">
                   <img src="/logos/dh.jpg" width="600px" className="w-96 2xl:w-8/12 pb-5 px-2" alt="Featured server logo" />
-                  <div className={"rounded-full select-none px-2 prose text-gray-200 font-semibold inline-flex mb-2 " + (playercount !== loadFailed ? "bg-green-600 " : "bg-red-700 ")}>{playercount} Players Online</div>
+                  <div className={"rounded-full select-none px-2 prose text-gray-200 font-semibold inline-flex mb-2 >>> bg-gray-800 bg-opacity-90 <<< " + (playercount !== loadFailed ? "bg-green-600 " : "bg-red-700 ")}>{/*{playercount} Players Online*/}Coming Soon!</div>
                   <button 
                     onClick={() => navigator.clipboard.writeText("dev.baezor.com")} 
-                    className="group inline-flex text-gray-200 rounded-full px-2 bg-gray-800 hover:bg-gray-700 focus:bg-green-600 cursor-pointer font-roboto focus:outline-none"
+                    className=">>> hidden <<< group inline-flex text-gray-200 rounded-full px-2 bg-gray-800 hover:bg-gray-700 focus:bg-green-600 cursor-pointer font-roboto focus:outline-none"
                   >
                     <div className="relative items-center justify-center select-none">
                       <span className="group-hover:invisible group-focus:invisible">dev.baezor.com</span>
@@ -51,9 +51,9 @@ export default function Home() {
                     <li className="flex justify-center">
                       {/*Servercards*/}
                       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10">
-                        <ServerCard name="Dawn Horizons" desc="Experience an enhanced Survival gamemode, explore distant lands and create whatever you desire on your own personal island." img="/main/demo4.jpg" logo="logos/dh.jpg" ip="dev.baezor.com" open={true} />
-                        <ServerCard name="Quartz Games" desc="Enjoy a library of unique and custom Minigames made by Quartz Studios." img="/main/quartz-games.jpg" logo="logos/main.jpg" ip="" open={false} />
-                        <ServerCard name="Coming soon..." desc="An MCMMO-style adventure game with an emphasis on questing, looting and pve. These elements combined with our high standard will deliver a Minecraft experience like no other." img="/main/demo5.jpg" logo="logos/coming-soon.jpg" ip="pls work !!!! :flushed:" open={false} />
+                        <ServerCard name="Dawn Horizons" desc="Experience an enhanced Survival gamemode, explore distant lands and create whatever you desire on your own personal island." img="/main/dawn-horizons.jpg" logo="logos/dh.jpg" ip="dev.baezor.com" open={false} />
+                        <ServerCard name="Quartz Games" desc="Enjoy a library of unique and custom Minigames made by Quartz Studios." img="/main/quartz-games.jpg" logo="logos/qg.jpg" ip="" open={false} />
+                        <ServerCard name="Coming soon..." desc="An MCMMO-style adventure game with an emphasis on questing, looting and pve. These elements combined with our high standard will deliver a Minecraft experience like no other." img="/main/demo1.jpg" logo="logos/coming-soon.jpg" ip="pls work !!!! :flushed:" open={false} />
                       </div>
                     </li>
                     <li>
@@ -92,9 +92,9 @@ export default function Home() {
                         <li className="flex flex-col sm:flex-row justify-center items-center">
                           <img src="logos/discord.jpg" alt="Wumpus from discord. Made with ♥ by @drawwithkristi on pinterest" className="w-16 xs:w-64 md:w-96" />
                           <div className="md:ml-10 ml-2 sm:ml-0 mr-2 pt-4">
-                            <h2 className="tracking-wider text-xl xs:text-3xl mb-4 xs:mb-0 font-semibold uppercase text-gray-200 text-center sm:text-left">Let's be social!</h2>
+                            <h2 className="tracking-wider text-xl xs:text-3xl mb-4 xs:mb-0 font-semibold uppercase text-gray-200 text-center sm:text-left">Want to chat?</h2>
                             <p className="hidden xs:block sm:w-64 md:w-96 text-gray-200 font-roboto my-6 pl-2 text-center sm:text-left">
-                              Here at Quartz Studios we think communication is the key to an amazing community. Due to that, we highly value our Discord community and the way it allows us to connect our server community together! Wether you want to simply chat with people or get support, our discord is the place.
+                              At Quartz Studios, communication key to a great community. Whether you want to chat with people or get support, our discord is the place. We value our discord community a lot as it's the backbone of our server, so join us!
                             </p>
                             <Link href="/discord">
                               <button className="w-full sm:w-auto  text-white text-lg font-semibold shadow bg-[#7289DA] hover:bg-[#5e75c4] border-b-4 border-blue-500 hover:border-blue-600 px-4 py-2 select-none focus:outline-none">Join our discord!</button>
