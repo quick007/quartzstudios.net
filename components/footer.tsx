@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import Head from "next/head";
 import { ShoppingCartIcon } from "@heroicons/react/outline";
+
 
 const Footer = (props) => {
     return (
@@ -14,24 +14,24 @@ const Footer = (props) => {
                         <div className="flex flex-col">
                             <h2 className="tracking-wider text-3xl  font-semibold uppercase text-gray-200">Quartz Studios</h2>
                             <p className="prose-xl text-gray-200">Creating next-generation Minecraft experiences</p>
-                            <hr className="ml-2 mt-1 w-16 border-2 border-blue-600" />
+                            <hr className="ml-2 mb-2 w-16 border-t-[3px] border-blue-600" />
                         </div>
                     </div>
                     {/*Rows of info*/}
                     <div className="flex flex-grow flex-row-reverse">
                         <div className="flex flex-col mr-2 lg:mr-0">
                             <h2 className="tracking-wider text-lg font-semibold uppercase text-gray-200">Policies</h2>
-                            <hr className="mt-1 w-16 border-2 border-blue-600" />
-                            <Link href="/rules">
+                            <hr className="mb-2 w-16 border-t-[3px] border-blue-600" />
+                            <Link href="/resources/rules">
                                 <a className="ml-1 prose-sm text-gray-300 hover:underline">
                                     Rules
                                 </a>
                             </Link>
                             <a className="ml-1 prose-sm text-gray-300 hover:underline"></a>
                         </div>
-                        <div className="flex flex-col mx-10 xl:mx-16">
+                        <div className="flex flex-col mx-10">
                             <h2 className="tracking-wider text-lg font-semibold uppercase text-gray-200">Resources</h2>
-                            <hr className="mt-1 w-16 border-2 border-blue-600" />
+                            <hr className="mb-2 w-16 border-t-[3px] border-blue-600" />
                             <a href="https://store.quartzstudios.net/" className="ml-1 prose-sm text-gray-300 hover:underline">Store</a>
                             <a href="https://github.com/quick007/quartzstudios.net" className="ml-1 prose-sm text-gray-300 hover:underline">Contribute</a>
                             <Link href="/resources/joinus">
@@ -42,7 +42,7 @@ const Footer = (props) => {
                         </div>
                         <div className="flex flex-col">
                             <h2 className="tracking-wider text-lg  font-semibold uppercase text-gray-200">Social</h2>
-                            <hr className="mt-1 w-16 border-2 border-blue-600" />
+                            <hr className="mb-2 w-16 border-t-[3px] border-blue-600" />
                             <a href="https://discord.gg/ZfPwQ9AhbW" className="ml-1 prose-sm text-gray-300 hover:underline">Discord</a>
                             <a href="https://github.com/QuartzStudios" className="ml-1 prose-sm text-gray-300 hover:underline">Github</a>
                         </div>
@@ -55,11 +55,11 @@ const Footer = (props) => {
                 <div className="flex flex-col justify-center items-center py-6">
                     <h2 className="tracking-wider text-xl xs:text-3xl font-semibold uppercase text-gray-200">Quartz Studios</h2>
                     <p className="prose-xl text-gray-200 text-center hidden xs:block">Creating next-generation Minecraft experiences</p>
-                    <hr className="ml-2 mt-1 w-16 border-2 border-blue-600 mb-4" />
+                    <hr className="mt-1 w-16 border-t-[3px] border-blue-600 mb-4" />
                     <div className="flex text-gray-500 space-x-2"> {/*modify text color to change svg colors*/}
                         <Link href="/discord">
                             <a className="rounded-full bg-gray-900 bg-opacity-50 p-2">
-                                {discordsvg()}
+                            {DiscordSvg()}
                             </a>
                         </Link>
                         <Link href="/store">
@@ -78,7 +78,7 @@ export default Footer;
 
 // Now, I don't normally like to do 1 section for mobile and one for desktop, but I wanted to make them very different, and idk js so I can't make them like colapse or whatever so if your seeing this, a pr to fix it would be amazing!
 
-function discordsvg() {
+function DiscordSvg() {
     return (
     <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245 240" className="fill-current w-6 h-auto">
         <path
@@ -93,4 +93,3 @@ function discordsvg() {
 
     );
 }
-

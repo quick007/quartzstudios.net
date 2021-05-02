@@ -5,7 +5,7 @@ import Link from "next/link"
 export default function Join() {
     return (
       <div className="flex flex-col h-screen">
-        <Navbar title="404" />
+        <Navbar title="Join the Team!" />
         <div className="flex h-full justify-center items-center">
           <div className="p-6 bg-gray-900">
             <h1 className="tracking-wider text-2xl font-semibold uppercase text-white text-center">Staff Applications are currently closed</h1>
