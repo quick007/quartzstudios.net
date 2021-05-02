@@ -32,7 +32,7 @@ export default function Home() {
               <div className="flex items-center justify-center">
                 <div className="absolute top-[15vh] flex flex-col items-center justify-center">
                   <img src="/logos/dh.jpg" width="600px" className="w-96 2xl:w-8/12 pb-5 px-2" alt="Featured server logo" />
-                  <div className={"rounded-full select-none px-2 prose text-gray-200 font-semibold inline-flex mb-2 >>> bg-gray-800 bg-opacity-90 <<< " + (playercount !== loadFailed ? "bg-green-600 " : "bg-red-700 ")}>{/*{playercount} Players Online*/}Coming Soon!</div>
+                  <div className={"rounded-full select-none px-2 prose text-gray-200 font-semibold inline-flex mb-2 >>> bg-gray-800 bg-opacity-90 <<< " + (playercount !== loadFailed ? "bg-green-600t " : "bg-red-700t ")}>{/*{playercount} Players Online*/}Coming Soon!</div>
                   <button 
                     onClick={() => navigator.clipboard.writeText("dev.baezor.com")} 
                     className=">>> hidden <<< group inline-flex text-gray-200 rounded-full px-2 bg-gray-800 hover:bg-gray-700 focus:bg-green-600 cursor-pointer font-roboto focus:outline-none"
