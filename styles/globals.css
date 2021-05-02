@@ -13,10 +13,14 @@
 }
 
 
-
 .font-quartz {
-      font-family: 'Quartz';
-  }
+  font-family: 'Quartz';
+}
+
+.font-thicc {
+  font-family: 'Zen Dots', cursive;
+  @apply !important;
+}
 
 @media (min-width: 1024px) {
   /* Scrollbar */
