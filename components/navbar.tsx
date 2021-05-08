@@ -17,6 +17,7 @@ const Navbar = (props) => {
                 <meta name="title" content={props.title + " | Quartz Studios"} />
                 <meta name="description" content="Quartz Studios creates next-generation experiences in Minecraft. Experience servers that push past Minecrafts limitations - all while  giving you the best product." />
                 <meta name="theme-color" content="#2563EB"/>
+                <meta name="google-site-verification" content="faaLN7I502cr6xq9KlihVA_C9vximVNLvP26acxU1KU" />
 
                 {/*Open Graph / Facebook & Discord*/}
                 <meta property="og:type" content="website" />
@@ -34,7 +35,7 @@ const Navbar = (props) => {
             </Head>
             <nav className="w-full text-gray-100 bg-gray-800 shadow-lg sticky top-[-1px] z-40">
                 <div className="mx-auto max-w-xl md:max-w-4xl xl:max-w-[78rem] flex flex-col md:flex-row">
-                    <div className="h-16 md:w-16 flex w-full items-center justify-center relative md:static">
+                    <div className="relative flex items-center justify-center w-full h-16 md:w-16 md:static">
                         <Link href="/">
                             <img src="/logos/main.jpg" className="h-10 hover:h-12 w-auto cursor-pointer absolute md:static left-[5px]" alt="Back to home logo" />
                         </Link>
@@ -75,7 +76,7 @@ export default Navbar;
 
 function DiscordSvg() {
     return (
-    <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245 240" className="fill-current w-6 h-auto" aria-label="Discord Icon">
+    <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245 240" className="w-6 h-auto fill-current" aria-label="Discord Icon">
         <path
             className="st0"
             d="M104.4 103.9c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.2-5 10.2-11.1.1-6.1-4.5-11.1-10.2-11.1zM140.9 103.9c-5.7 0-10.2 5-10.2 11.1s4.6 11.1 10.2 11.1c5.7 0 10.2-5 10.2-11.1s-4.5-11.1-10.2-11.1z"
