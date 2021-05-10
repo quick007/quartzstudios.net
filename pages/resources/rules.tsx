@@ -24,7 +24,7 @@ export default function Home() {
                                     <li className="w-full md:w-[95%] px-3 py-4 bg-gray-800 rounded">Perverse behavior and creating/continuing arguments for the sake of an argument are not allowed.</li>
                                     <li className="w-full md:w-[95%] px-3 py-4 bg-gray-800 rounded">Arguing with or publicly flaming staff members based on their administrative actions is not allowed. Staff members will always have the final say - any complaints should be directed to <span className="rounded-md bg-gray-900 bg-opacity-50 p-1">Levah#0001</span> and not public chat.</li>
                                     <li className="w-full md:w-[95%] px-3 py-4 bg-gray-800 rounded">Using our platforms to advertise other content (whether via DM, public chat, or ingame messaging channel [like a party chat]) is not allowed unless otherwise specified.</li>
-                                    <li className="w-full md:w-[95%] px-3 py-4 bg-gray-800 rounded">Purposely misusing channels on the Discord is not allowed. If you are unsure of a channel’s usage, ask.</li>
+                                    <li className="w-full md:w-[95%] px-3 py-4 bg-gray-800 rounded">Purposely misusing channels is not allowed. If you are unsure of a channel’s usage, ask.</li>
                                     <li className="w-full md:w-[95%] px-3 py-4 bg-gray-800 rounded">Generally, try and think about what you send before you send it.</li>
                                 </ol>
                             </div>
@@ -35,7 +35,7 @@ export default function Home() {
                                     <li className="w-full md:w-[95%] px-3 py-4 bg-gray-800 rounded">Using and sharing the Quartz Studios assets are strictly forbidden, the resource pack is copyrighted content.</li>
                                     <li className="w-full md:w-[95%] px-3 py-4 bg-gray-800 rounded">Threatening to DDoS, DoS, dox, kill or otherwise harm someone with malicious intent is not allowed.</li>
                                     <li className="w-full md:w-[95%] px-3 py-4 bg-gray-800 rounded">Wishing harm on another user, whether by encouraging self-harm or by other means, is not allowed.</li>
-                                    <li className="w-full md:w-[95%] px-3 py-4 bg-gray-800 rounded">Exploiting vanilla Mincraft exploits or unintentional "features" in our custom systems is not allowed.</li>
+                                    <li className="w-full md:w-[95%] px-3 py-4 bg-gray-800 rounded">Exploiting vanilla Minecraft exploits or unintentional "features" in our custom systems is not allowed.</li>
                                     <li className="w-full md:w-[95%] px-3 py-4 bg-gray-800 rounded">Scamming users through trading or conversing is not allowed.</li>
                                     <li className="w-full md:w-[95%] px-3 py-4 bg-gray-800 rounded">Using hacked clients, auto clickers (yes, taping/weighting down a key counts), or anything that goes beyond purely cosmetic software or gives you a clear advantage over other players is not allowed. Staff should use their best judgment when determining when a client/software is allowed or not.</li>
                                     <li className="w-full md:w-[95%] px-3 py-4 bg-gray-800 rounded">Building inappropriate buildings or symbols is not allowed. This includes, but is not limited to swastikas and male/female genitalia.</li>
