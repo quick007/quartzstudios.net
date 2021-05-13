@@ -26,7 +26,7 @@ export default function Home() {
           <Navbar title="Next-Generation Minecraft Experiences" />
             <div className="relative">
               <div className="flex justify-center">
-                <img src="main/main.jpg" className="w-full min-w-[1280px] h-[calc(100vh-200px)] " alt="Background main page img" />
+                <img src="main/main.jpg" className="w-full bg-cover min-w-[1280px] h-[calc(100vh-200px)] " alt="Background main page img" />
               </div>
               <div className="absolute inset-0 bg-gradient-to-b from-[rgba(0,0,0,0)] via-[rgba(0,0,0,0)] to-gray-700 h-[calc(100vh-200px)]" />
               <div className="flex items-center justify-center">
