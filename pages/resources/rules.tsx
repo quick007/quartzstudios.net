@@ -14,7 +14,7 @@ export default function Home() {
                             <div className="flex flex-col items-center h-screen md:h-auto relative">
                                 <h2 className="text-gray-100 text-4xl font-semibold prose-2xl mt-32">Rules</h2>
                                 <hr className="mt-1 w-16 border-t-[3px] border-blue-600 mb-32" />
-                                <ArrowDownIcon className="w-6 h-auto absolute bottom-[5rem] animate-bounce" />
+                                <ArrowDownIcon className="w-6 h-auto absolute bottom-[5rem] animate-bounce md:hidden" />
                             </div>
                             <div className="w-full bg-gray-900 p-4 pb-10 mb-10">
                                 <h3 className="uppercase my-2 tracking-wide font-semibold text-gray-200 text-center md:text-left">Chat Based Rules</h3>
