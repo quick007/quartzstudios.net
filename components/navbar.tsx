@@ -49,7 +49,7 @@ const Navbar = (props) => {
                     </a>
                     <div className={"flex flex-grow flex-col items-center md:flex-row-reverse mx-4 md:ml-0 md:mr-2 md:mb-0 space-y-4 md:space-y-0 " + (open ? "mb-4" : "")}>
                         <Link href="/store">
-                            <a className={"main-btn font-sans w-full md:w-auto mx-auto md:mr-0 md:ml-3 " + (open ? "" : "hidden md:block")}>
+                            <a className={"main-btn font-sans w-full md:w-auto mx-auto md:mr-0 md:ml-3 px-7 " + (open ? "" : "hidden md:block")}>
                                 Store
                             </a>
                         </Link>
