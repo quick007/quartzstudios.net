@@ -15,7 +15,7 @@ const Footer = (props) => {
                             <h2 className="tracking-wider text-3xl  font-semibold uppercase text-gray-200">Quartz Studios</h2>
                             <p className="prose-xl text-gray-200">Creating next-generation Minecraft experiences</p>
                             <hr className="ml-2 mb-2 w-16 border-t-[3px] border-blue-600" />
-                            <a href="https://dsc.bio/LukasK" target="_blank" className="ml-2 mt-4 text-sm text-gray-300 hover:underline">Created with ❤ by Lukas#1969</a>
+                            <a href="https://dsc.bio/LukasK" target="_blank" className="ml-2 mt-4 text-sm text-gray-300 hover:underline">Created with ❤ by &#169;Lukas</a>
                         </div>
                     </div>
                     {/*Rows of info*/}
@@ -35,7 +35,7 @@ const Footer = (props) => {
                             <hr className="mb-2 w-16 border-t-[3px] border-blue-600" />
                             <a href="https://store.quartzstudios.net/" className="ml-1 prose-sm text-gray-300 hover:underline">Store</a>
                             <a href="https://github.com/quick007/quartzstudios.net" className="ml-1 prose-sm text-gray-300 hover:underline">Contribute</a>
-                            <Link href="/resources/joinus">
+                            <Link href="/resources/join">
                                 <a className="ml-1 prose-sm text-gray-300 hover:underline">
                                     Team Application
                                 </a>
