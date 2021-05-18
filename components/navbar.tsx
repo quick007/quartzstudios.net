@@ -15,7 +15,7 @@ const Navbar = (props) => {
 
                 {/*Primary Meta Tags*/}
                 <meta name="title" content={props.title + " | Quartz Studios"} />
-                <meta name="description" content="Quartz Studios creates next-generation experiences in Minecraft. Experience servers that push past Minecrafts limitations - all while  giving you the best product." />
+                <meta name="description" content="Quartz Studios creates next-generation experiences in Minecraft. Experience servers that push past Minecrafts limitations - all while giving you the best product." />
                 <meta name="theme-color" content="#2563EB"/>
                 <meta name="google-site-verification" content="faaLN7I502cr6xq9KlihVA_C9vximVNLvP26acxU1KU" />
 
@@ -23,21 +23,21 @@ const Navbar = (props) => {
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://quartzstudios.net" />
                 <meta property="og:title" content={props.title + " | Quartz Studios"} />
-                <meta property="og:description" content="Quartz Studios creates next-generation experiences in Minecraft. Experience servers that push past Minecrafts limitations - all while  giving you the best product." />
+                <meta property="og:description" content="Quartz Studios creates next-generation experiences in Minecraft. Experience servers that push past Minecrafts limitations - all while giving you the best product." />
                 <meta property="og:image" content="https://quartzstudios-net.vercel.app/logos/embead.jpg" />
 
                 {/*Twitter*/}
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:url" content="https://quartzstudios.net" />
                 <meta property="twitter:title" content={props.title + " | Quartz Studios"} />
-                <meta property="twitter:description" content="Quartz Studios creates next-generation experiences in Minecraft. Experience servers that push past Minecrafts limitations - all while  giving you the best product." />
+                <meta property="twitter:description" content="Quartz Studios creates next-generation experiences in Minecraft. Experience servers that push past Minecrafts limitations - all while giving you the best product." />
                 <meta property="twitter:image" content="https://quartzstudios-net.vercel.app/logos/embead.jpg" />
             </Head>
-            <nav className="w-full text-gray-100 bg-gray-800 shadow-lg sticky top-[-1px] z-40">
+            <nav className="w-full text-gray-100 bg-gray-800 shadow-lg sticky top-0 z-40">
                 <div className="mx-auto max-w-xl md:max-w-4xl xl:max-w-[78rem] flex flex-col md:flex-row">
-                    <div className="relative flex items-center justify-center w-full h-16 md:w-16 md:static">
+                    <a className="relative flex items-center justify-center w-full h-16 md:w-16 md:static">
                         <Link href="/">
-                            <img src="/logos/main.jpg" className="h-10 hover:h-12 w-auto cursor-pointer absolute md:static left-[5px]" alt="Back to home logo" />
+                            <img src="/logos/main.jpg" className="h-10 hover:h-12 w-auto cursor-pointer absolute md:static left-[5px] transition duration-200 ease-in-out transform hover:scale-105" alt="Back to home logo" />
                         </Link>
                         <button 
                             className="bg-gray-600 hover:opacity-70 px-2 py-1 rounded-sm right-[5px] absolute md:hidden focus:outline-none"
@@ -46,10 +46,10 @@ const Navbar = (props) => {
                             <MenuAlt3Icon className={"w-6 h-auto " + (open ? "hidden" : "")} />
                             <XIcon className={"w-6 h-auto " + (open ? "" : "hidden")} />
                         </button>
-                    </div>
+                    </a>
                     <div className={"flex flex-grow flex-col items-center md:flex-row-reverse mx-4 md:ml-0 md:mr-2 md:mb-0 space-y-4 md:space-y-0 " + (open ? "mb-4" : "")}>
                         <Link href="/store">
-                            <a className={"main-btn font-sans w-full md:w-auto mx-auto md:mr-0 md:ml-3 " + (open ? "" : "hidden md:block")}>
+                            <a className={"main-btn font-sans w-full md:w-auto mx-auto md:mr-0 md:ml-3 px-7 " + (open ? "" : "hidden md:block")}>
                                 Store
                             </a>
                         </Link>
