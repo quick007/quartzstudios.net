@@ -72,7 +72,7 @@ const Footer = (props) => {
                         </Link>
                     </div>
                     <a href="https://discord.com/invite/yrwUpMcfcR" className="mt-2 text-gray-200 font-semibold rounded-md bg-[#0a0b0d] py-1 px-2">
-                        Powered by JS Services 
+                        Powered by Wave Studios
                     </a>
                 </div>
             </div>
