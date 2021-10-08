@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap);
 
 @font-face {
     font-family: 'Quartz';
-    src: url('../quartz-font.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-     url('../quartz-font.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+    src: url('/quartz-font.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+     url('/quartz-font.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
 
 
@@ -18,7 +18,9 @@
 }
 
 .font-thicc {
-  font-family: 'Zen Dots', cursive;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 0.05em;
+  user-select: none;
   @apply !important;
 }
 
@@ -48,6 +50,10 @@
 
 .main-btn {
   font-family: 'Roboto', sans-serif;
-  @apply bg-blue-600 hover:opacity-70 px-4 py-1 rounded-sm text-gray-100 text-center;
+  @apply bg-blue-600 hover:opacity-70 px-4 py-1 rounded-sm text-gray-100 text-center select-none;
 }
 
+.sec-btn {
+  font-family: 'Roboto', sans-serif;
+  @apply bg-gray-600 hover:opacity-70 px-4 py-1 rounded-sm text-gray-100 text-center select-none;
+}
